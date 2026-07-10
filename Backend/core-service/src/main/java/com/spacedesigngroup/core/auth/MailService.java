@@ -1,15 +1,17 @@
 package com.spacedesigngroup.core.auth;
 
-import jakarta.mail.internet.MimeMessage;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.MediaType;
+import org.springframework.mail.MailSendException;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.Map;
 
 @Service
-@RequiredArgsConstructor
 @Slf4j
 public class MailService {
 
@@ -21,16 +23,20 @@ public class MailService {
     private static final String LINE = "#e3d5c8";
     private static final String FONT_DISPLAY = "'Georgia', 'Times New Roman', serif";
     private static final String FONT_BODY = "'Helvetica Neue', Arial, sans-serif";
+    private static final String RESEND_API_URL = "https://api.resend.com/emails";
 
-    private final JavaMailSender mailSender;
+    private final RestTemplate restTemplate = new RestTemplate();
 
-    @Value("${spring.mail.username}")
-    private String fromAddress;
+    @Value("${app.resend.api-key}")
+    private String resendApiKey;
+
+    @Value("${app.resend.from-email:onboarding@resend.dev}")
+    private String resendFromEmail;
 
     @Value("${app.frontend-url}")
     private String frontendUrl;
 
-    @Value("${app.contact-notification-email:${spring.mail.username}}")
+    @Value("${app.contact-notification-email:${app.resend.from-email:onboarding@resend.dev}}")
     private String contactNotificationEmail;
 
     public void sendOtpEmail(String toEmail, String fullName, String otp) {
@@ -82,33 +88,36 @@ public class MailService {
     }
 
     private void send(String toEmail, String subject, String html) {
-        try {
-            MimeMessage message = mailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(message, false, "UTF-8");
-            helper.setFrom(fromAddress, "Space Design Group");
-            helper.setTo(toEmail);
-            helper.setSubject(subject);
-            helper.setText(html, true);
-            mailSender.send(message);
-        } catch (Exception ex) {
-            log.error("Failed to send email to {}", toEmail, ex);
-            throw new org.springframework.mail.MailSendException("Could not send email to " + toEmail, ex);
-        }
+        sendViaResend(toEmail, null, subject, html);
     }
 
     private void sendWithReplyTo(String toEmail, String replyToEmail, String subject, String html) {
+        sendViaResend(toEmail, replyToEmail, subject, html);
+    }
+
+    private void sendViaResend(String toEmail, String replyToEmail, String subject, String html) {
         try {
-            MimeMessage message = mailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(message, false, "UTF-8");
-            helper.setFrom(fromAddress, "Space Design Group");
-            helper.setTo(toEmail);
-            helper.setReplyTo(replyToEmail);
-            helper.setSubject(subject);
-            helper.setText(html, true);
-            mailSender.send(message);
+            HttpHeaders headers = new HttpHeaders();
+            headers.setBearerAuth(resendApiKey);
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            Map<String, Object> payload = replyToEmail == null
+                    ? Map.of(
+                            "from", "Space Design Group <" + resendFromEmail + ">",
+                            "to", java.util.List.of(toEmail),
+                            "subject", subject,
+                            "html", html)
+                    : Map.of(
+                            "from", "Space Design Group <" + resendFromEmail + ">",
+                            "to", java.util.List.of(toEmail),
+                            "reply_to", replyToEmail,
+                            "subject", subject,
+                            "html", html);
+
+            restTemplate.postForEntity(RESEND_API_URL, new HttpEntity<>(payload, headers), String.class);
         } catch (Exception ex) {
             log.error("Failed to send email to {}", toEmail, ex);
-            throw new org.springframework.mail.MailSendException("Could not send email to " + toEmail, ex);
+            throw new MailSendException("Could not send email to " + toEmail, ex);
         }
     }
 
