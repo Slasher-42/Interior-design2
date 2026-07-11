@@ -19,7 +19,7 @@ export function GoogleSignInButton({ role, onSuccess, onError }) {
           const user = await loginWithGoogle(response.credential, role);
           onSuccess?.(user);
         } catch (err) {
-          onError?.(err.message || t("google.signInFailed"));
+          onError?.(err.message || t("google.signInFailed"), response.credential);
         }
       },
     });
@@ -31,7 +31,7 @@ export function GoogleSignInButton({ role, onSuccess, onError }) {
       width: 320,
       text: "continue_with",
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [role]);
 
   if (!CLIENT_ID) return null;
