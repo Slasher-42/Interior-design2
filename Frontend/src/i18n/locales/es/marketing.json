@@ -1,0 +1,304 @@
+{
+  "chatWidget": {
+    "title": "Space Design Group",
+    "subtitle": "Pregúntanos sobre tu espacio",
+    "greeting": "¡Hola! Pregúntame lo que quieras sobre nuestros servicios de diseño de interiores, cómo trabajamos o cómo empezar.",
+    "placeholder": "Escribe tu pregunta...",
+    "open": "Abrir chat",
+    "close": "Cerrar chat",
+    "send": "Enviar",
+    "errorFallback": "Algo salió mal al enviar eso. Inténtalo de nuevo en un momento."
+  },
+  "nav": {
+    "home": "Inicio",
+    "portfolio": "Portafolio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "myPortal": "Mi Portal",
+    "signIn": "Iniciar sesión",
+    "switchToLight": "Cambiar a modo claro",
+    "switchToDark": "Cambiar a modo oscuro"
+  },
+  "hero": {
+    "eyebrow": "Space Design Group",
+    "titleLine1": "Entra.",
+    "titleLine2": "Habitación por habitación.",
+    "showFrame": "Mostrar {{label}}",
+    "frames": {
+      "exterior": "La Casa",
+      "living": "Sala de estar",
+      "kitchen": "Cocina",
+      "bedroom": "Dormitorio",
+      "bath": "Baño"
+    }
+  },
+  "marquee": {
+    "items": [
+      "Diseño de interiores",
+      "Visualización de espacios con IA",
+      "Arquitectura",
+      "Diseño de exposiciones",
+      "Branding",
+      "Planificación de espacios"
+    ]
+  },
+  "approach": {
+    "eyebrow": "Nuestro enfoque",
+    "heading": "Diseño que empieza por cómo se vive una habitación, no por cómo se fotografía.",
+    "steps": {
+      "0": {
+        "title": "Escuchar",
+        "body": "Empezamos por cómo vives realmente: las rutinas, los puntos de desorden, las habitaciones que evitas."
+      },
+      "1": {
+        "title": "Diseñar",
+        "body": "Planos espaciales, paneles de materiales y estudios de iluminación, refinados juntos hasta que la distribución resulte evidente."
+      },
+      "2": {
+        "title": "Construir",
+        "body": "Gestionamos los oficios, el abastecimiento y la instalación, así que lo único que haces es ver cómo todo cobra forma."
+      }
+    }
+  },
+  "portfolioSection": {
+    "eyebrow": "Portafolio",
+    "heading": "Proyectos seleccionados"
+  },
+  "statement": {
+    "quote": "Una habitación bien diseñada no debería anunciarse. Simplemente debería tener sentido en el momento en que entras, y seguir teniéndolo cinco años después.",
+    "attribution": "— Space Design Group, Principio Fundador"
+  },
+  "servicesSection": {
+    "eyebrow": "Servicios",
+    "heading": "De lo que nos encargamos",
+    "items": {
+      "0": {
+        "title": "Diseño de interiores integral",
+        "body": "Diseño y gestión de proyectos de principio a fin, desde el primer boceto hasta el estilismo final."
+      },
+      "1": {
+        "title": "Planificación de espacios",
+        "body": "Distribuciones que resuelven la circulación, el almacenamiento y la luz antes de elegir un solo acabado."
+      },
+      "2": {
+        "title": "Dirección de renovaciones",
+        "body": "Coordinación en obra con arquitectos y oficios para mantener una renovación fiel al diseño."
+      },
+      "3": {
+        "title": "Mobiliario y abastecimiento",
+        "body": "Abastecimiento curado entre piezas vintage, a medida y prefabricadas dentro de tu presupuesto."
+      }
+    }
+  },
+  "stackingShowcase": {
+    "panels": {
+      "light": {
+        "title": "Luz",
+        "body": "Cada habitación comienza por cómo se mueve la luz a través de ella, hora tras hora."
+      },
+      "material": {
+        "title": "Material",
+        "body": "Texturas elegidas para envejecer bien, no solo para fotografiarse bien el primer día."
+      },
+      "form": {
+        "title": "Forma",
+        "body": "Distribuciones que resuelven la circulación y el almacenamiento antes de elegir un solo acabado."
+      },
+      "detail": {
+        "title": "Detalle",
+        "body": "Las pequeñas decisiones meditadas que hacen que un espacio se sienta terminado."
+      },
+      "craft": {
+        "title": "Oficio",
+        "body": "Nada estándar sin una razón: cada pieza se gana su lugar."
+      }
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Capacidades",
+    "heading": "Cuatro disciplinas, un equipo responsable.",
+    "items": {
+      "visualization": {
+        "index": "01",
+        "title": "Modelado 3D y visualización con IA",
+        "body": "Mira una habitación reestilizada antes de mover un solo mueble. Sube una foto y previsualízala ambientada en el estilo que elijas.",
+        "cta": "Prueba el visualizador"
+      },
+      "architecture": {
+        "index": "02",
+        "title": "Arquitectura interior y exterior",
+        "body": "Planificación espacial y estructural que trata el exterior y el interior de un edificio como un solo problema de diseño coherente."
+      },
+      "exhibition": {
+        "index": "03",
+        "title": "Diseño de exposiciones",
+        "body": "Espacios expositivos temporales y permanentes diseñados para la circulación, la narrativa y la presencia de marca."
+      },
+      "branding": {
+        "index": "04",
+        "title": "Branding",
+        "body": "Identidad y branding ambiental que extienden el lenguaje visual de una empresa al espacio físico."
+      }
+    }
+  },
+  "cta": {
+    "heading": "¿Tienes un espacio que aún no funciona?",
+    "startProject": "Iniciar un proyecto",
+    "alreadyClient": "¿Ya eres cliente?",
+    "signInPortal": "Inicia sesión en tu portal →"
+  },
+  "footer": {
+    "copyright": "© {{year}} Space Design Group",
+    "tagline": "Un estudio de diseño de interiores que crea espacios meditados y habitables, desde el primer boceto hasta el estilismo final.",
+    "explore": "Explorar",
+    "studio": "Estudio",
+    "location": "Kigali, Ruanda",
+    "getStarted": "Empezar",
+    "startProject": "Iniciar un proyecto",
+    "signIn": "Inicia sesión en tu portal",
+    "social": {
+      "email": "Correo electrónico",
+      "instagram": "Instagram",
+      "pinterest": "Pinterest",
+      "twitter": "Twitter"
+    }
+  },
+  "about": {
+    "eyebrow": "Nosotros",
+    "story": {
+      "heading": "Fundamos Space Design Group porque la mayoría de las renovaciones no fracasan en la etapa de diseño, sino en la entrega.",
+      "body": "Space Design Group nació para cerrar esa brecha: un solo equipo que lleva un proyecto desde el primer plano de planta hasta el estilismo final, para que nada se pierda en la traducción entre diseñador, contratista y cliente. A lo largo de los años eso ha significado trabajar en renovaciones integrales de viviendas, renovaciones de una sola habitación y acondicionamientos comerciales, siempre con el mismo enfoque: entender cómo se usa un espacio antes de decidir cómo debería lucir."
+    },
+    "philosophy": {
+      "eyebrow": "Filosofía del estudio",
+      "heading": "El buen diseño desaparece en la vida cotidiana.",
+      "body": "Medimos una habitación terminada por cómo se comporta un año después, no por cómo se fotografía el día de la entrega. Eso significa priorizar el almacenamiento que realmente se usa, materiales que envejecen bien y distribuciones que no necesitan un rediseño en cuanto la vida cambia a su alrededor."
+    },
+    "team": {
+      "eyebrow": "Equipo",
+      "heading": "Las personas detrás del trabajo",
+      "members": {
+        "0": { "role": "Fundadora y diseñadora principal" },
+        "1": { "role": "Diseñadora de interiores sénior" },
+        "2": { "role": "Responsable de proyectos y abastecimiento" },
+        "3": { "role": "Asociada de diseño" }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "heading": "Hablemos de tu espacio",
+    "intro": "Contáctanos directamente, o utiliza el formulario y te responderemos en un plazo de dos días hábiles.",
+    "info": {
+      "studio": "Estudio",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "hours": "Horario",
+      "hoursValue": "Lunes – Viernes, 9:00 – 18:00"
+    },
+    "map": {
+      "title": "Ubicación del estudio de Space Design Group"
+    },
+    "confirmation": {
+      "heading": "Gracias, mensaje recibido.",
+      "body": "Nos pondremos en contacto en un plazo de dos días hábiles."
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando..."
+    },
+    "toast": {
+      "messageSent": "¡Mensaje enviado!",
+      "messageFailed": "No se pudo enviar tu mensaje. Inténtalo de nuevo."
+    }
+  },
+  "portfolioPage": {
+    "eyebrow": "Portafolio",
+    "heading": "Trabajo seleccionado, completo.",
+    "intro": "Una mirada más amplia a proyectos en espacios residenciales y comerciales: filtra por categoría o explora todo.",
+    "filters": {
+      "ariaLabel": "Filtrar por categoría",
+      "all": "Todos",
+      "residential": "Residencial",
+      "commercial": "Comercial"
+    }
+  },
+  "projectDetail": {
+    "eyebrow": "Portafolio",
+    "notFound": {
+      "heading": "Proyecto no encontrado"
+    },
+    "backToPortfolio": "Volver al portafolio",
+    "back": "← Volver al portafolio",
+    "galleryAlt": "{{title}} detalle {{index}}",
+    "cta": {
+      "prompt": "¿Te interesa algo similar?",
+      "button": "Solicitar un servicio"
+    }
+  },
+  "requestService": {
+    "eyebrow": "Solicitar un servicio",
+    "heading": "Cuéntanos sobre tu proyecto",
+    "intro": "Cuantos más detalles nos des de entrada, más rápido podremos responderte con algo útil.",
+    "confirmation": {
+      "eyebrow": "Solicitud recibida",
+      "heading": "Gracias, hemos recibido tu solicitud.",
+      "body": "Un miembro del equipo se pondrá en contacto en un plazo de dos días hábiles para hablar de los próximos pasos."
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "serviceType": "Tipo de servicio",
+      "selectService": "Selecciona un servicio",
+      "propertyType": "Tipo de propiedad",
+      "selectPropertyType": "Selecciona un tipo de propiedad",
+      "budgetRange": "Rango de presupuesto",
+      "selectBudgetRange": "Selecciona un rango de presupuesto",
+      "description": "Descripción del proyecto",
+      "descriptionPlaceholder": "¿Qué esperas cambiar y qué te lleva a emprender el proyecto ahora?",
+      "preferredContact": "Método de contacto preferido",
+      "contactEmail": "Correo electrónico",
+      "contactPhone": "Teléfono",
+      "submit": "Enviar solicitud"
+    },
+    "toast": {
+      "requestReceived": "¡Solicitud recibida!"
+    }
+  },
+  "servicesPage": {
+    "eyebrow": "Servicios",
+    "heading": "De lo que nos encargamos",
+    "intro": "Cuatro formas de trabajar con nosotros, desde una sola consulta hasta un acondicionamiento integral de vivienda o local comercial.",
+    "idealFor": "Ideal para:",
+    "requestButton": "Solicitar este servicio"
+  },
+  "testimonialsPage": {
+    "eyebrow": "Testimonios",
+    "heading": "Lo que dicen los clientes",
+    "items": {
+      "0": {
+        "quote": "Hicieron más preguntas sobre cómo vivimos realmente que cualquier diseñador con el que habíamos hablado antes. El resultado es el primer hogar que se ha sentido terminado en el momento en que volvimos a mudarnos.",
+        "attribution": "Emmanuel y Diane Habimana — Riverside Loft"
+      },
+      "1": {
+        "quote": "Necesitábamos rediseñar nuestra oficina sin cerrar el estudio durante semanas. Space Design Group planificó todo en torno a nuestros plazos y apenas interrumpió un solo día de trabajo.",
+        "attribution": "Solange Mukamana — Birchgrove Studio"
+      },
+      "2": {
+        "quote": "Vine por una sola consulta sobre una sala de estar en la que llevaba dos años estancado. Salí con un plan que realmente ejecuté en un fin de semana.",
+        "attribution": "Jean-Paul Niyonsenga — Cliente de consulta de diseño"
+      },
+      "3": {
+        "quote": "Hartwell House tenía tanto carácter original que teníamos miedo de tocarla. Trabajaron con el edificio en lugar de en su contra, que es exactamente lo que necesitábamos.",
+        "attribution": "La familia Nshimiyimana — Hartwell House"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "submit": "Submeter",
+    "close": "Fechar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "back": "Voltar",
+    "next": "Seguinte",
+    "loading": "A carregar...",
+    "saving": "A guardar...",
+    "retry": "Tentar novamente",
+    "viewAll": "Ver tudo"
+  },
+  "status": {
+    "success": "Sucesso",
+    "error": "Erro",
+    "warning": "Aviso"
+  }
+}

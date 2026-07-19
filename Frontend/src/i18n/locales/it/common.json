@@ -1,0 +1,22 @@
+{
+  "actions": {
+    "save": "Salva",
+    "cancel": "Annulla",
+    "submit": "Invia",
+    "close": "Chiudi",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "next": "Avanti",
+    "loading": "Caricamento...",
+    "saving": "Salvataggio...",
+    "retry": "Riprova",
+    "viewAll": "Vedi tutto"
+  },
+  "status": {
+    "success": "Operazione riuscita",
+    "error": "Errore",
+    "warning": "Avviso"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "chatWidget": {
+    "title": "Space Design Group",
+    "subtitle": "Fragen Sie uns zu Ihrem Raum",
+    "greeting": "Hallo! Fragen Sie mich alles über unsere Innenarchitektur-Leistungen, unsere Arbeitsweise oder wie Sie loslegen können.",
+    "placeholder": "Geben Sie Ihre Frage ein...",
+    "open": "Chat öffnen",
+    "close": "Chat schließen",
+    "send": "Senden",
+    "errorFallback": "Beim Senden ist etwas schiefgelaufen. Bitte versuchen Sie es gleich noch einmal."
+  },
+  "nav": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt",
+    "myPortal": "Mein Portal",
+    "signIn": "Anmelden",
+    "switchToLight": "Zum hellen Modus wechseln",
+    "switchToDark": "Zum dunklen Modus wechseln"
+  },
+  "hero": {
+    "eyebrow": "Space Design Group",
+    "titleLine1": "Treten Sie ein.",
+    "titleLine2": "Raum für Raum.",
+    "showFrame": "{{label}} anzeigen",
+    "frames": {
+      "exterior": "Das Haus",
+      "living": "Wohnzimmer",
+      "kitchen": "Küche",
+      "bedroom": "Schlafzimmer",
+      "bath": "Badezimmer"
+    }
+  },
+  "marquee": {
+    "items": [
+      "Innenarchitektur",
+      "KI-Raumvisualisierung",
+      "Architektur",
+      "Ausstellungsdesign",
+      "Branding",
+      "Raumplanung"
+    ]
+  },
+  "approach": {
+    "eyebrow": "Unser Ansatz",
+    "heading": "Design, das damit beginnt, wie ein Raum gelebt wird – nicht wie er sich fotografieren lässt.",
+    "steps": {
+      "0": {
+        "title": "Zuhören",
+        "body": "Wir beginnen damit, wie Sie tatsächlich leben – die Routinen, die Unordnungsstellen, die Räume, die Sie meiden."
+      },
+      "1": {
+        "title": "Entwerfen",
+        "body": "Raumpläne, Materialboards und Lichtstudien, gemeinsam verfeinert, bis das Layout selbstverständlich wirkt."
+      },
+      "2": {
+        "title": "Umsetzen",
+        "body": "Wir koordinieren Gewerke, Beschaffung und Montage, sodass Sie nur noch zusehen, wie alles zusammenkommt."
+      }
+    }
+  },
+  "portfolioSection": {
+    "eyebrow": "Portfolio",
+    "heading": "Ausgewählte Projekte"
+  },
+  "statement": {
+    "quote": "Ein gut gestalteter Raum sollte sich nicht aufdrängen. Er sollte im Moment des Eintretens einfach stimmig wirken – und auch fünf Jahre später noch stimmig sein.",
+    "attribution": "— Space Design Group, Gründungsprinzip"
+  },
+  "servicesSection": {
+    "eyebrow": "Leistungen",
+    "heading": "Was wir übernehmen",
+    "items": {
+      "0": {
+        "title": "Komplette Innenarchitektur",
+        "body": "Durchgängige Gestaltung und Projektleitung, von der ersten Skizze bis zum finalen Styling."
+      },
+      "1": {
+        "title": "Raumplanung",
+        "body": "Grundrisse, die Wegeführung, Stauraum und Licht klären, bevor auch nur eine Oberfläche gewählt wird."
+      },
+      "2": {
+        "title": "Renovierungsleitung",
+        "body": "Koordination vor Ort mit Architekten und Gewerken, damit eine Renovierung dem Entwurf treu bleibt."
+      },
+      "3": {
+        "title": "Möbel & Beschaffung",
+        "body": "Kuratierte Beschaffung von Vintage-, Maß- und Fertigstücken innerhalb Ihres Budgets."
+      }
+    }
+  },
+  "stackingShowcase": {
+    "panels": {
+      "light": {
+        "title": "Licht",
+        "body": "Jeder Raum beginnt damit, wie sich das Licht Stunde für Stunde durch ihn bewegt."
+      },
+      "material": {
+        "title": "Material",
+        "body": "Texturen, die gewählt werden, um gut zu altern – nicht nur, um am ersten Tag gut auszusehen."
+      },
+      "form": {
+        "title": "Form",
+        "body": "Grundrisse, die Wegeführung und Stauraum klären, bevor auch nur eine Oberfläche gewählt wird."
+      },
+      "detail": {
+        "title": "Detail",
+        "body": "Die kleinen, durchdachten Entscheidungen, die einen Raum fertig wirken lassen."
+      },
+      "craft": {
+        "title": "Handwerk",
+        "body": "Nichts von der Stange ohne Grund – jedes Stück verdient seinen Platz."
+      }
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Kompetenzen",
+    "heading": "Vier Disziplinen, ein verantwortliches Team.",
+    "items": {
+      "visualization": {
+        "index": "01",
+        "title": "3D-Modellierung & KI-Visualisierung",
+        "body": "Sehen Sie einen Raum neu gestaltet, bevor ein einziges Möbelstück bewegt wird. Laden Sie ein Foto hoch und sehen Sie es in Ihrem gewählten Stil inszeniert.",
+        "cta": "Visualizer ausprobieren"
+      },
+      "architecture": {
+        "index": "02",
+        "title": "Innen- & Außenarchitektur",
+        "body": "Räumliche und bauliche Planung, die das Äußere und Innere eines Gebäudes als eine zusammenhängende Gestaltungsaufgabe behandelt."
+      },
+      "exhibition": {
+        "index": "03",
+        "title": "Ausstellungsdesign",
+        "body": "Temporäre und dauerhafte Ausstellungsräume, gestaltet für Wegeführung, Erzählung und Markenpräsenz."
+      },
+      "branding": {
+        "index": "04",
+        "title": "Branding",
+        "body": "Identitäts- und Umgebungsbranding, das die visuelle Sprache eines Unternehmens in den physischen Raum überträgt."
+      }
+    }
+  },
+  "cta": {
+    "heading": "Haben Sie einen Raum, der noch nicht funktioniert?",
+    "startProject": "Projekt starten",
+    "alreadyClient": "Bereits Kunde?",
+    "signInPortal": "Beim Portal anmelden →"
+  },
+  "footer": {
+    "copyright": "© {{year}} Space Design Group",
+    "tagline": "Ein Innenarchitektur-Studio, das durchdachte, wohnliche Räume schafft – von der ersten Skizze bis zum finalen Styling.",
+    "explore": "Entdecken",
+    "studio": "Studio",
+    "location": "Kigali, Ruanda",
+    "getStarted": "Loslegen",
+    "startProject": "Projekt starten",
+    "signIn": "Beim Portal anmelden",
+    "social": {
+      "email": "E-Mail",
+      "instagram": "Instagram",
+      "pinterest": "Pinterest",
+      "twitter": "Twitter"
+    }
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "story": {
+      "heading": "Wir haben die Space Design Group gegründet, weil die meisten Renovierungen nicht in der Entwurfsphase scheitern – sie scheitern an der Übergabe.",
+      "body": "Die Space Design Group wurde gegründet, um genau diese Lücke zu schließen: ein Team, das ein Projekt vom ersten Grundriss bis zum finalen Styling begleitet, sodass zwischen Designer, Handwerker und Kunde nichts verloren geht. Über die Jahre hinweg bedeutete das Arbeiten an kompletten Hausrenovierungen, Auffrischungen einzelner Räume und gewerblichen Ausbauten – stets mit demselben Ansatz: verstehen, wie ein Raum genutzt wird, bevor entschieden wird, wie er aussehen soll."
+    },
+    "philosophy": {
+      "eyebrow": "Studio-Philosophie",
+      "heading": "Gutes Design verschwindet im Alltag.",
+      "body": "Wir messen einen fertigen Raum daran, wie er sich nach einem Jahr bewährt, nicht daran, wie er sich am Übergabetag fotografieren lässt. Das bedeutet, Stauraum zu priorisieren, der tatsächlich genutzt wird, Materialien, die gut altern, und Grundrisse, die keine Neugestaltung brauchen, sobald sich das Leben drum herum verändert."
+    },
+    "team": {
+      "eyebrow": "Team",
+      "heading": "Die Menschen hinter der Arbeit",
+      "members": {
+        "0": { "role": "Gründerin & leitende Designerin" },
+        "1": { "role": "Senior-Innenarchitektin" },
+        "2": { "role": "Projekt- & Beschaffungsleitung" },
+        "3": { "role": "Design-Mitarbeiterin" }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "heading": "Sprechen wir über Ihren Raum",
+    "intro": "Melden Sie sich direkt oder nutzen Sie das Formular, und wir melden uns innerhalb von zwei Werktagen bei Ihnen.",
+    "info": {
+      "studio": "Studio",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "hours": "Öffnungszeiten",
+      "hoursValue": "Montag – Freitag, 9–18 Uhr"
+    },
+    "map": {
+      "title": "Standort des Studios der Space Design Group"
+    },
+    "confirmation": {
+      "heading": "Danke – Nachricht erhalten.",
+      "body": "Wir melden uns innerhalb von zwei Werktagen bei Ihnen."
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet..."
+    },
+    "toast": {
+      "messageSent": "Nachricht gesendet!",
+      "messageFailed": "Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    }
+  },
+  "portfolioPage": {
+    "eyebrow": "Portfolio",
+    "heading": "Ausgewählte Arbeiten, in voller Länge.",
+    "intro": "Ein umfassenderer Blick auf Projekte in Wohn- und Gewerberäumen – filtern Sie nach Kategorie oder durchstöbern Sie alles.",
+    "filters": {
+      "ariaLabel": "Nach Kategorie filtern",
+      "all": "Alle",
+      "residential": "Wohnräume",
+      "commercial": "Gewerberäume"
+    }
+  },
+  "projectDetail": {
+    "eyebrow": "Portfolio",
+    "notFound": {
+      "heading": "Projekt nicht gefunden"
+    },
+    "backToPortfolio": "Zurück zum Portfolio",
+    "back": "← Zurück zum Portfolio",
+    "galleryAlt": "{{title}} Detail {{index}}",
+    "cta": {
+      "prompt": "Interesse an etwas Ähnlichem?",
+      "button": "Leistung anfragen"
+    }
+  },
+  "requestService": {
+    "eyebrow": "Leistung anfragen",
+    "heading": "Erzählen Sie uns von Ihrem Projekt",
+    "intro": "Je mehr Details Sie uns vorab geben, desto schneller können wir mit einer hilfreichen Antwort zurückkommen.",
+    "confirmation": {
+      "eyebrow": "Anfrage erhalten",
+      "heading": "Danke – wir haben Ihre Anfrage erhalten.",
+      "body": "Ein Mitglied des Teams meldet sich innerhalb von zwei Werktagen, um die nächsten Schritte zu besprechen."
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "serviceType": "Art der Leistung",
+      "selectService": "Leistung auswählen",
+      "propertyType": "Art der Immobilie",
+      "selectPropertyType": "Immobilienart auswählen",
+      "budgetRange": "Budgetrahmen",
+      "selectBudgetRange": "Budgetrahmen auswählen",
+      "description": "Projektbeschreibung",
+      "descriptionPlaceholder": "Was möchten Sie verändern, und was gibt jetzt den Anstoß für das Projekt?",
+      "preferredContact": "Bevorzugte Kontaktmethode",
+      "contactEmail": "E-Mail",
+      "contactPhone": "Telefon",
+      "submit": "Anfrage absenden"
+    },
+    "toast": {
+      "requestReceived": "Anfrage erhalten!"
+    }
+  },
+  "servicesPage": {
+    "eyebrow": "Leistungen",
+    "heading": "Was wir übernehmen",
+    "intro": "Vier Möglichkeiten, mit uns zu arbeiten – von einer einzelnen Beratung bis zum kompletten Wohn- oder Gewerbeausbau.",
+    "idealFor": "Ideal für:",
+    "requestButton": "Diese Leistung anfragen"
+  },
+  "testimonialsPage": {
+    "eyebrow": "Referenzen",
+    "heading": "Was Kunden sagen",
+    "items": {
+      "0": {
+        "quote": "Sie stellten mehr Fragen dazu, wie wir tatsächlich leben, als jeder Designer zuvor, mit dem wir gesprochen hatten. Das Ergebnis ist das erste Zuhause, das sich in dem Moment fertig anfühlte, in dem wir wieder einzogen.",
+        "attribution": "Emmanuel & Diane Habimana — Riverside Loft"
+      },
+      "1": {
+        "quote": "Wir brauchten ein neu gestaltetes Büro, ohne das Studio wochenlang zu schließen. Die Space Design Group hat das Ganze um unsere Termine herum getaktet, und es hat kaum einen einzigen Arbeitstag gestört.",
+        "attribution": "Solange Mukamana — Birchgrove Studio"
+      },
+      "2": {
+        "quote": "Ich kam für eine einzige Beratung zu einem Wohnzimmer, an dem ich seit zwei Jahren festhing. Ich ging mit einem Plan hinaus, den ich tatsächlich an einem Wochenende umsetzte.",
+        "attribution": "Jean-Paul Niyonsenga — Kunde einer Designberatung"
+      },
+      "3": {
+        "quote": "Hartwell House hatte so viel ursprünglichen Charakter, dass wir Angst hatten, es anzufassen. Sie arbeiteten mit dem Gebäude statt gegen es, und genau das brauchten wir.",
+        "attribution": "Familie Nshimiyimana — Hartwell House"
+      }
+    }
+  }
+}
