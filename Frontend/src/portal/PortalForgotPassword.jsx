@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "./auth/AuthContext";
-import { MailIcon, ArrowLeftIcon } from "./authIcons";
-import { AuthSidePanel } from "./AuthSidePanel";
+import { AuthHeader } from "./AuthHeader";
 import { useToast } from "../components/toast/ToastContext";
 import "./PortalLogin.css";
 
@@ -28,12 +27,7 @@ export function PortalForgotPassword() {
 
   return (
     <div className="auth-page">
-      <Link to="/" className="auth-home-link">
-        <ArrowLeftIcon />
-        <span>{t("home")}</span>
-      </Link>
-
-      <AuthSidePanel />
+      <AuthHeader authLinkTo="/portal/login" authLinkLabel={t("login.signInButton")} />
 
       <div className="auth-page__content">
         <div className="auth-card">
@@ -62,12 +56,12 @@ export function PortalForgotPassword() {
                 <div className="auth-field">
                   <label htmlFor="email">{t("forgotPassword.emailLabel")}</label>
                   <div className="auth-input">
-                    <MailIcon />
                     <input
                       id="email"
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                      placeholder={t("forgotPassword.emailLabel")}
                       required
                       autoComplete="email"
                       autoFocus

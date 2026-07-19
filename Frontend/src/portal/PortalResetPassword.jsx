@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "./auth/AuthContext";
-import { LockIcon, EyeIcon, EyeOffIcon, ArrowLeftIcon } from "./authIcons";
-import { AuthSidePanel } from "./AuthSidePanel";
+import { EyeIcon, EyeOffIcon } from "./authIcons";
+import { AuthHeader } from "./AuthHeader";
 import { useToast } from "../components/toast/ToastContext";
 import "./PortalLogin.css";
 
@@ -49,12 +49,7 @@ export function PortalResetPassword() {
 
   return (
     <div className="auth-page">
-      <Link to="/" className="auth-home-link">
-        <ArrowLeftIcon />
-        <span>{t("home")}</span>
-      </Link>
-
-      <AuthSidePanel />
+      <AuthHeader authLinkTo="/portal/login" authLinkLabel={t("login.signInButton")} />
 
       <div className="auth-page__content">
         <div className="auth-card">
@@ -89,12 +84,12 @@ export function PortalResetPassword() {
                 <div className="auth-field">
                   <label htmlFor="password">{t("resetPassword.newPasswordLabel")}</label>
                   <div className="auth-input">
-                    <LockIcon />
                     <input
                       id="password"
                       type={showPassword ? "text" : "password"}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
+                      placeholder={t("resetPassword.newPasswordLabel")}
                       required
                       autoComplete="new-password"
                       autoFocus
@@ -113,12 +108,12 @@ export function PortalResetPassword() {
                 <div className="auth-field">
                   <label htmlFor="confirmPassword">{t("resetPassword.confirmNewPasswordLabel")}</label>
                   <div className="auth-input">
-                    <LockIcon />
                     <input
                       id="confirmPassword"
                       type={showPassword ? "text" : "password"}
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
+                      placeholder={t("resetPassword.confirmNewPasswordLabel")}
                       required
                       autoComplete="new-password"
                     />

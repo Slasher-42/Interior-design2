@@ -3,10 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "./auth/AuthContext";
 import { ROLE_DEFAULT_ROUTE } from "./auth/roles";
-import { MailIcon, LockIcon, EyeIcon, EyeOffIcon, ArrowLeftIcon } from "./authIcons";
+import { EyeIcon, EyeOffIcon } from "./authIcons";
 import { OtpStep } from "./OtpStep";
-import { AuthSidePanel } from "./AuthSidePanel";
-import { GoogleSignInButton } from "./GoogleSignInButton";
+import { AuthHeader } from "./AuthHeader";
+import { SocialAuthRow } from "./SocialAuthRow";
 import { useToast } from "../components/toast/ToastContext";
 import "./PortalLogin.css";
 
@@ -75,14 +75,17 @@ export function PortalLogin() {
     }
   }
 
+  function handleGoogleError(message, idToken) {
+    if (message === GOOGLE_ROLE_REQUIRED_MESSAGE && idToken) {
+      setGoogleIdToken(idToken);
+    } else {
+      showError(message);
+    }
+  }
+
   return (
     <div className="auth-page">
-      <Link to="/" className="auth-home-link">
-        <ArrowLeftIcon />
-        <span>{t("home")}</span>
-      </Link>
-
-      <AuthSidePanel />
+      <AuthHeader authLinkTo="/portal/register" authLinkLabel={t("register.bigTitle")} />
 
       <div className="auth-page__content">
         <div className="auth-card">
@@ -102,7 +105,7 @@ export function PortalLogin() {
               <h2 className="auth-card__title">{t("login.googleRoleTitle")}</h2>
               <p className="auth-card__sub">{t("login.googleRoleSubtitle")}</p>
 
-              <div className="auth-field">
+              <div className="auth-field" style={{ marginTop: "1.6rem" }}>
                 <div
                   className="auth-role-group"
                   role="radiogroup"
@@ -120,7 +123,6 @@ export function PortalLogin() {
                         checked={googleRole === r.value}
                         onChange={(e) => setGoogleRole(e.target.value)}
                       />
-                      <span className="auth-role-option__dot" />
                       <span className="auth-role-option__label">{r.label}</span>
                     </label>
                   ))}
@@ -132,6 +134,7 @@ export function PortalLogin() {
                 className="auth-form__submit"
                 disabled={loading}
                 onClick={handleGoogleRoleSubmit}
+                style={{ marginTop: "1.6rem" }}
               >
                 {loading ? t("login.signingIn") : t("login.googleRoleContinue")}
               </button>
@@ -148,8 +151,20 @@ export function PortalLogin() {
             </>
           ) : (
             <>
-              <h2 className="auth-card__title">{t("login.title")}</h2>
-              <p className="auth-card__sub">{t("login.subtitle")}</p>
+              <h2 className="auth-card__title">{t("login.bigTitle")}</h2>
+
+              <SocialAuthRow
+                onSuccess={(user) => {
+                  showSuccess(t("login.welcomeBackToast"));
+                  goToDashboard(user.role);
+                }}
+                onError={handleGoogleError}
+                onUnavailable={(provider) =>
+                  showError(t("social.unavailable", { provider }))
+                }
+              />
+
+              <div className="auth-divider">{t("social.orSignInEmail")}</div>
 
               <form className="auth-form" onSubmit={handleSubmit}>
                 {error && <p className="auth-form__error">{error}</p>}
@@ -157,12 +172,12 @@ export function PortalLogin() {
                 <div className="auth-field">
                   <label htmlFor="email">{t("login.emailLabel")}</label>
                   <div className="auth-input">
-                    <MailIcon />
                     <input
                       id="email"
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
+                      placeholder={t("login.emailLabel")}
                       required
                       autoComplete="email"
                     />
@@ -170,19 +185,14 @@ export function PortalLogin() {
                 </div>
 
                 <div className="auth-field">
-                  <div className="auth-field__row">
-                    <label htmlFor="password">{t("login.passwordLabel")}</label>
-                    <Link to="/portal/forgot-password" className="auth-field__forgot">
-                      {t("login.forgotPassword")}
-                    </Link>
-                  </div>
+                  <label htmlFor="password">{t("login.passwordLabel")}</label>
                   <div className="auth-input">
-                    <LockIcon />
                     <input
                       id="password"
                       type={showPassword ? "text" : "password"}
                       value={form.password}
                       onChange={(e) => setForm({ ...form, password: e.target.value })}
+                      placeholder={t("login.passwordLabel")}
                       required
                       autoComplete="current-password"
                     />
@@ -195,26 +205,17 @@ export function PortalLogin() {
                       {showPassword ? <EyeOffIcon /> : <EyeIcon />}
                     </button>
                   </div>
+                  <div className="auth-field__row">
+                    <Link to="/portal/forgot-password" className="auth-field__forgot">
+                      {t("login.forgotPassword")}
+                    </Link>
+                  </div>
                 </div>
 
                 <button type="submit" className="auth-form__submit" disabled={loading}>
                   {loading ? t("login.signingIn") : t("login.signInButton")}
                 </button>
               </form>
-
-              <GoogleSignInButton
-                onSuccess={(user) => {
-                  showSuccess(t("login.welcomeBackToast"));
-                  goToDashboard(user.role);
-                }}
-                onError={(message, idToken) => {
-                  if (message === GOOGLE_ROLE_REQUIRED_MESSAGE && idToken) {
-                    setGoogleIdToken(idToken);
-                  } else {
-                    showError(message);
-                  }
-                }}
-              />
 
               <p className="auth-card__switch">
                 {t("login.noAccount")}{" "}

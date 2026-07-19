@@ -3,10 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "./auth/AuthContext";
 import { ROLE_DEFAULT_ROUTE } from "./auth/roles";
-import { MailIcon, LockIcon, UserIcon, EyeIcon, EyeOffIcon, ArrowLeftIcon } from "./authIcons";
+import { EyeIcon, EyeOffIcon } from "./authIcons";
 import { OtpStep } from "./OtpStep";
-import { AuthSidePanel } from "./AuthSidePanel";
-import { GoogleSignInButton } from "./GoogleSignInButton";
+import { AuthHeader } from "./AuthHeader";
+import { SocialAuthRow } from "./SocialAuthRow";
 import { useToast } from "../components/toast/ToastContext";
 import "./PortalLogin.css";
 
@@ -83,12 +83,7 @@ export function PortalRegister() {
 
   return (
     <div className="auth-page">
-      <Link to="/" className="auth-home-link">
-        <ArrowLeftIcon />
-        <span>{t("home")}</span>
-      </Link>
-
-      <AuthSidePanel />
+      <AuthHeader authLinkTo="/portal/login" authLinkLabel={t("login.signInButton")} />
 
       <div className="auth-page__content">
         <div className="auth-card">
@@ -105,133 +100,141 @@ export function PortalRegister() {
             />
           ) : (
             <>
-          <h2 className="auth-card__title">{t("register.title")}</h2>
-          <p className="auth-card__sub">{t("register.subtitle")}</p>
+              <h2 className="auth-card__title">{t("register.bigTitle")}</h2>
 
-          <form className="auth-form" onSubmit={handleSubmit}>
-            {displayError && <p className="auth-form__error">{displayError}</p>}
+              <div className="auth-field" style={{ marginTop: "1.6rem" }}>
+                <label>{t("register.registeringAs")}</label>
+                <div className="auth-role-group" role="radiogroup" aria-label={t("register.registeringAs")}>
+                  {ROLES.map((r) => (
+                    <label
+                      key={r.value}
+                      className={
+                        "auth-role-option" +
+                        (form.role === r.value ? " is-selected" : "")
+                      }
+                    >
+                      <input
+                        type="radio"
+                        name="role"
+                        value={r.value}
+                        checked={form.role === r.value}
+                        onChange={(e) => setForm({ ...form, role: e.target.value })}
+                      />
+                      <span className="auth-role-option__label">{r.label}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
 
-            <div className="auth-field">
-              <label>{t("register.registeringAs")}</label>
-              <div className="auth-role-group" role="radiogroup" aria-label={t("register.registeringAs")}>
-                {ROLES.map((r) => (
-                  <label
-                    key={r.value}
-                    className={
-                      "auth-role-option" +
-                      (form.role === r.value ? " is-selected" : "")
-                    }
-                  >
+              <SocialAuthRow
+                role={form.role}
+                onSuccess={(user) => {
+                  showSuccess(t("register.successToast"));
+                  goToDashboard(user.role);
+                }}
+                onError={(message) => showError(message)}
+                onUnavailable={(provider) =>
+                  showError(t("social.unavailable", { provider }))
+                }
+              />
+
+              <div className="auth-divider">{t("social.orSignUpEmail")}</div>
+
+              <form className="auth-form" onSubmit={handleSubmit}>
+                {displayError && <p className="auth-form__error">{displayError}</p>}
+
+                <div className="auth-field">
+                  <label htmlFor="fullName">{t("register.fullNameLabel")}</label>
+                  <div className="auth-input">
                     <input
-                      type="radio"
-                      name="role"
-                      value={r.value}
-                      checked={form.role === r.value}
-                      onChange={(e) => setForm({ ...form, role: e.target.value })}
+                      id="fullName"
+                      type="text"
+                      value={form.fullName}
+                      onChange={(e) => setForm({ ...form, fullName: e.target.value })}
+                      placeholder={t("register.fullNameLabel")}
+                      required
+                      autoComplete="name"
                     />
-                    <span className="auth-role-option__dot" />
-                    <span className="auth-role-option__label">{r.label}</span>
-                  </label>
-                ))}
-              </div>
-            </div>
+                  </div>
+                </div>
 
-            <div className="auth-field">
-              <label htmlFor="fullName">{t("register.fullNameLabel")}</label>
-              <div className="auth-input">
-                <UserIcon />
-                <input
-                  id="fullName"
-                  type="text"
-                  value={form.fullName}
-                  onChange={(e) => setForm({ ...form, fullName: e.target.value })}
-                  required
-                  autoComplete="name"
-                />
-              </div>
-            </div>
+                <div className="auth-field">
+                  <label htmlFor="reg-email">{t("register.emailLabel")}</label>
+                  <div className="auth-input">
+                    <input
+                      id="reg-email"
+                      type="email"
+                      value={form.email}
+                      onChange={(e) => setForm({ ...form, email: e.target.value })}
+                      placeholder={t("register.emailLabel")}
+                      required
+                      autoComplete="email"
+                    />
+                  </div>
+                </div>
 
-            <div className="auth-field">
-              <label htmlFor="reg-email">{t("register.emailLabel")}</label>
-              <div className="auth-input">
-                <MailIcon />
-                <input
-                  id="reg-email"
-                  type="email"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  required
-                  autoComplete="email"
-                />
-              </div>
-            </div>
+                <div className="auth-field">
+                  <label htmlFor="reg-password">{t("register.passwordLabel")}</label>
+                  <div className="auth-input">
+                    <input
+                      id="reg-password"
+                      type={showPassword ? "text" : "password"}
+                      value={form.password}
+                      onChange={(e) => setForm({ ...form, password: e.target.value })}
+                      placeholder={t("register.passwordLabel")}
+                      required
+                      autoComplete="new-password"
+                    />
+                    <button
+                      type="button"
+                      className="auth-input__toggle"
+                      onClick={() => setShowPassword((v) => !v)}
+                      aria-label={showPassword ? t("register.hidePassword") : t("register.showPassword")}
+                    >
+                      {showPassword ? <EyeOffIcon /> : <EyeIcon />}
+                    </button>
+                  </div>
+                </div>
 
-            <div className="auth-field">
-              <label htmlFor="reg-password">{t("register.passwordLabel")}</label>
-              <div className="auth-input">
-                <LockIcon />
-                <input
-                  id="reg-password"
-                  type={showPassword ? "text" : "password"}
-                  value={form.password}
-                  onChange={(e) => setForm({ ...form, password: e.target.value })}
-                  required
-                  autoComplete="new-password"
-                />
-                <button
-                  type="button"
-                  className="auth-input__toggle"
-                  onClick={() => setShowPassword((v) => !v)}
-                  aria-label={showPassword ? t("register.hidePassword") : t("register.showPassword")}
-                >
-                  {showPassword ? <EyeOffIcon /> : <EyeIcon />}
+                <div className="auth-field">
+                  <label htmlFor="confirmPassword">{t("register.confirmPasswordLabel")}</label>
+                  <div className="auth-input">
+                    <input
+                      id="confirmPassword"
+                      type={showConfirmPassword ? "text" : "password"}
+                      value={form.confirmPassword}
+                      onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}
+                      placeholder={t("register.confirmPasswordLabel")}
+                      required
+                      autoComplete="new-password"
+                    />
+                    <button
+                      type="button"
+                      className="auth-input__toggle"
+                      onClick={() => setShowConfirmPassword((v) => !v)}
+                      aria-label={showConfirmPassword ? t("register.hidePassword") : t("register.showPassword")}
+                    >
+                      {showConfirmPassword ? <EyeOffIcon /> : <EyeIcon />}
+                    </button>
+                  </div>
+                </div>
+
+                <p className="auth-terms">
+                  {t("register.termsPrefix")}{" "}
+                  <Link to="/contact">{t("register.termsLink")}</Link>
+                </p>
+
+                <button type="submit" className="auth-form__submit" disabled={loading}>
+                  {loading ? t("register.creatingAccount") : t("register.bigTitle")}
                 </button>
-              </div>
-            </div>
+              </form>
 
-            <div className="auth-field">
-              <label htmlFor="confirmPassword">{t("register.confirmPasswordLabel")}</label>
-              <div className="auth-input">
-                <LockIcon />
-                <input
-                  id="confirmPassword"
-                  type={showConfirmPassword ? "text" : "password"}
-                  value={form.confirmPassword}
-                  onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}
-                  required
-                  autoComplete="new-password"
-                />
-                <button
-                  type="button"
-                  className="auth-input__toggle"
-                  onClick={() => setShowConfirmPassword((v) => !v)}
-                  aria-label={showConfirmPassword ? t("register.hidePassword") : t("register.showPassword")}
-                >
-                  {showConfirmPassword ? <EyeOffIcon /> : <EyeIcon />}
-                </button>
-              </div>
-            </div>
-
-            <button type="submit" className="auth-form__submit" disabled={loading}>
-              {loading ? t("register.creatingAccount") : t("register.createAccountButton")}
-            </button>
-          </form>
-
-          <GoogleSignInButton
-            role={form.role}
-            onSuccess={(user) => {
-              showSuccess(t("register.successToast"));
-              goToDashboard(user.role);
-            }}
-            onError={(message) => showError(message)}
-          />
-
-          <p className="auth-card__switch">
-            {t("register.alreadyHaveAccount")}{" "}
-            <Link to="/portal/login" className="auth-card__link">
-              {t("register.signIn")}
-            </Link>
-          </p>
+              <p className="auth-card__switch">
+                {t("register.alreadyHaveAccount")}{" "}
+                <Link to="/portal/login" className="auth-card__link">
+                  {t("register.signIn")}
+                </Link>
+              </p>
             </>
           )}
         </div>
