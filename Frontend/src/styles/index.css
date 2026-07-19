@@ -1,11 +1,11 @@
 :root {
-  --color-bg: #faf5f2;
-  --color-bg-alt: #f0e8e1;
-  --color-ink: #21170f;
-  --color-ink-soft: #6b5d51;
-  --color-accent: #c2790f;
-  --color-line: rgba(33, 23, 15, 0.14);
-  --color-header-bg: rgba(250, 245, 242, 0.88);
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f4f1;
+  --color-ink: #1a1815;
+  --color-ink-soft: #6f6a63;
+  --color-accent: #b0894e;
+  --color-line: rgba(26, 24, 21, 0.12);
+  --color-header-bg: rgba(255, 255, 255, 0.85);
 
   --font-display: "Cinzel", "Georgia", serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -16,13 +16,13 @@
 }
 
 :root[data-theme="dark"] {
-  --color-bg: #1e1a16;
-  --color-bg-alt: #14110e;
-  --color-ink: #f1ece6;
-  --color-ink-soft: #a89c8f;
-  --color-accent: #e29a3e;
+  --color-bg: #171614;
+  --color-bg-alt: #100f0d;
+  --color-ink: #f2efe9;
+  --color-ink-soft: #a8a29a;
+  --color-accent: #cba86a;
   --color-line: rgba(255, 255, 255, 0.12);
-  --color-header-bg: rgba(20, 17, 14, 0.85);
+  --color-header-bg: rgba(19, 18, 16, 0.85);
 }
 
 :root[data-theme="dark"] .field input,

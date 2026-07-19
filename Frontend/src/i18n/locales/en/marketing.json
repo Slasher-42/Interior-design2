@@ -162,8 +162,10 @@
       "email": "Email",
       "instagram": "Instagram",
       "pinterest": "Pinterest",
-      "twitter": "Twitter"
-    }
+      "twitter": "X",
+      "shop": "Shop"
+    },
+    "followUs": "Follow us"
   },
   "about": {
     "eyebrow": "About",
@@ -180,10 +182,18 @@
       "eyebrow": "Team",
       "heading": "The people behind the work",
       "members": {
-        "0": { "role": "Founder & Principal Designer" },
-        "1": { "role": "Senior Interior Designer" },
-        "2": { "role": "Project & Sourcing Lead" },
-        "3": { "role": "Design Associate" }
+        "0": {
+          "role": "Founder & Principal Designer"
+        },
+        "1": {
+          "role": "Senior Interior Designer"
+        },
+        "2": {
+          "role": "Project & Sourcing Lead"
+        },
+        "3": {
+          "role": "Design Associate"
+        }
       }
     }
   },

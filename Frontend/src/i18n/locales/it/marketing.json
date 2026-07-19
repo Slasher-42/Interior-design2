@@ -162,8 +162,10 @@
       "email": "Email",
       "instagram": "Instagram",
       "pinterest": "Pinterest",
-      "twitter": "Twitter"
-    }
+      "twitter": "X",
+      "shop": "Negozio"
+    },
+    "followUs": "Seguici"
   },
   "about": {
     "eyebrow": "Chi siamo",
@@ -180,10 +182,18 @@
       "eyebrow": "Team",
       "heading": "Le persone dietro il lavoro",
       "members": {
-        "0": { "role": "Fondatrice e Interior Designer principale" },
-        "1": { "role": "Interior Designer senior" },
-        "2": { "role": "Responsabile progetto e approvvigionamento" },
-        "3": { "role": "Design Associate" }
+        "0": {
+          "role": "Fondatrice e Interior Designer principale"
+        },
+        "1": {
+          "role": "Interior Designer senior"
+        },
+        "2": {
+          "role": "Responsabile progetto e approvvigionamento"
+        },
+        "3": {
+          "role": "Design Associate"
+        }
       }
     }
   },

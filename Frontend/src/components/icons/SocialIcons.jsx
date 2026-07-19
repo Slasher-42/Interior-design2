@@ -46,9 +46,19 @@ export function TwitterIcon(props) {
   return (
     <svg viewBox="0 0 24 22" {...props}>
       <path
-        fill="#000000"
+        fill="currentColor"
         d="M18.901 1.153h3.68l-8.04 9.19L24 20.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 18.644h2.039L6.486 1.24H4.298Z"
       />
+    </svg>
+  );
+}
+
+export function ShopIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M6 2 3 6v1a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0V6l-3-4Z" />
+      <path d="M4 8.5V20a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8.5" />
+      <path d="M9.5 21v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5" />
     </svg>
   );
 }

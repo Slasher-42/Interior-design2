@@ -18,5 +18,11 @@
     "success": "Success",
     "error": "Error",
     "warning": "Warning"
+  },
+  "cookies": {
+    "title": "We value your privacy",
+    "description": "We use cookies to enhance your browsing experience and analyze our traffic. By clicking “Accept”, you consent to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

@@ -162,8 +162,10 @@
       "email": "E-Mail",
       "instagram": "Instagram",
       "pinterest": "Pinterest",
-      "twitter": "Twitter"
-    }
+      "twitter": "X",
+      "shop": "Shop"
+    },
+    "followUs": "Folgen Sie uns"
   },
   "about": {
     "eyebrow": "Über uns",
@@ -180,10 +182,18 @@
       "eyebrow": "Team",
       "heading": "Die Menschen hinter der Arbeit",
       "members": {
-        "0": { "role": "Gründerin & leitende Designerin" },
-        "1": { "role": "Senior-Innenarchitektin" },
-        "2": { "role": "Projekt- & Beschaffungsleitung" },
-        "3": { "role": "Design-Mitarbeiterin" }
+        "0": {
+          "role": "Gründerin & leitende Designerin"
+        },
+        "1": {
+          "role": "Senior-Innenarchitektin"
+        },
+        "2": {
+          "role": "Projekt- & Beschaffungsleitung"
+        },
+        "3": {
+          "role": "Design-Mitarbeiterin"
+        }
       }
     }
   },

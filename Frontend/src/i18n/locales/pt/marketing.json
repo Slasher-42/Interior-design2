@@ -162,8 +162,10 @@
       "email": "Email",
       "instagram": "Instagram",
       "pinterest": "Pinterest",
-      "twitter": "Twitter"
-    }
+      "twitter": "X",
+      "shop": "Loja"
+    },
+    "followUs": "Siga-nos"
   },
   "about": {
     "eyebrow": "Sobre",
@@ -180,10 +182,18 @@
       "eyebrow": "Equipa",
       "heading": "As pessoas por trás do trabalho",
       "members": {
-        "0": { "role": "Fundadora e Designer Principal" },
-        "1": { "role": "Designer de Interiores Sénior" },
-        "2": { "role": "Responsável de Projeto e Aprovisionamento" },
-        "3": { "role": "Associado de Design" }
+        "0": {
+          "role": "Fundadora e Designer Principal"
+        },
+        "1": {
+          "role": "Designer de Interiores Sénior"
+        },
+        "2": {
+          "role": "Responsável de Projeto e Aprovisionamento"
+        },
+        "3": {
+          "role": "Associado de Design"
+        }
       }
     }
   },

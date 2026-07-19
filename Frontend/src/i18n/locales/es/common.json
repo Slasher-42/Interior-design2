@@ -18,5 +18,11 @@
     "success": "Éxito",
     "error": "Error",
     "warning": "Advertencia"
+  },
+  "cookies": {
+    "title": "Valoramos tu privacidad",
+    "description": "Utilizamos cookies para mejorar tu experiencia de navegación y analizar nuestro tráfico. Al hacer clic en «Aceptar», consientes nuestro uso de cookies.",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
   }
 }

@@ -12,6 +12,7 @@ import { RequestService } from "./pages/RequestService";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { CustomCursor } from "./components/CustomCursor";
 import { ChatWidget } from "./components/ChatWidget";
+import { CookieConsent } from "./components/CookieConsent";
 import { useScrollReveal } from "./hooks/useScrollReveal";
 
 import { ThemeProvider } from "./theme/ThemeContext";
@@ -112,6 +113,7 @@ function App() {
               <Route path="security"      element={<SecurityAccess />} />
             </Route>
           </Routes>
+          <CookieConsent />
         </AuthProvider>
       </ToastProvider>
     </ThemeProvider>

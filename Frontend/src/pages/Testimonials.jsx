@@ -9,19 +9,29 @@ export function Testimonials() {
   return (
     <section className="testimonials-page">
       <div className="container">
-        <p className="eyebrow reveal">{t("testimonialsPage.eyebrow")}</p>
-        <h1 className="testimonials-page__heading reveal">
-          {t("testimonialsPage.heading")}
-        </h1>
+        <header className="testimonials-page__head">
+          <p className="eyebrow reveal">{t("testimonialsPage.eyebrow")}</p>
+          <h1 className="testimonials-page__heading reveal">
+            {t("testimonialsPage.heading")}
+          </h1>
+        </header>
 
         <div className="testimonials-page__list">
           {TESTIMONIAL_KEYS.map((key, i) => (
-            <figure key={key} className="testimonials-page__item reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
-              <blockquote className="statement__quote">
-                “{t(`testimonialsPage.items.${key}.quote`)}”
+            <figure
+              key={key}
+              className="testimonials-page__item reveal"
+              style={{ transitionDelay: `${i * 0.08}s` }}
+            >
+              <span className="testimonials-page__quote-mark" aria-hidden="true">
+                &ldquo;
+              </span>
+              <blockquote className="testimonials-page__quote">
+                {t(`testimonialsPage.items.${key}.quote`)}
               </blockquote>
-              <figcaption className="statement__attribution">
-                — {t(`testimonialsPage.items.${key}.attribution`)}
+              <figcaption className="testimonials-page__attribution">
+                <span className="testimonials-page__rule" aria-hidden="true" />
+                {t(`testimonialsPage.items.${key}.attribution`)}
               </figcaption>
             </figure>
           ))}

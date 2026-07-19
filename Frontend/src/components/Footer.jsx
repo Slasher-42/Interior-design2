@@ -3,16 +3,16 @@ import { useTranslation } from "react-i18next";
 import {
   MailIcon,
   InstagramIcon,
-  PinterestIcon,
   TwitterIcon,
+  ShopIcon,
 } from "./icons/SocialIcons";
 import "./Footer.css";
 
 const SOCIAL_LINKS = [
+  { key: "instagram", href: "https://www.instagram.com/spacedesigngrp/", Icon: InstagramIcon },
+  { key: "twitter", href: "https://x.com/spacedesign_grp", Icon: TwitterIcon },
+  { key: "shop", href: "https://shop.fourseasons.com/", Icon: ShopIcon },
   { key: "email", href: "mailto:hello@spacedesigngroup.com", Icon: MailIcon },
-  { key: "instagram", href: "#", Icon: InstagramIcon },
-  { key: "pinterest", href: "#", Icon: PinterestIcon },
-  { key: "twitter", href: "#", Icon: TwitterIcon },
 ];
 
 const EXPLORE_LINKS = [
@@ -30,11 +30,20 @@ export function Footer() {
         <div className="footer__brand">
           <span className="footer__mark">Space Design Group</span>
           <p className="footer__tagline">{t("footer.tagline")}</p>
+          <span className="footer__social-title">{t("footer.followUs")}</span>
           <div className="footer__links">
             {SOCIAL_LINKS.map(({ key, href, Icon }) => {
               const label = t(`footer.social.${key}`);
+              const external = href.startsWith("http");
               return (
-                <a key={key} href={href} aria-label={label} title={label}>
+                <a
+                  key={key}
+                  href={href}
+                  aria-label={label}
+                  title={label}
+                  className="footer__social-btn"
+                  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
                   <Icon className="footer__icon" />
                 </a>
               );
