@@ -1,0 +1,703 @@
+{
+  "businessReport": {
+    "accessRestricted": {
+      "title": "Accesso limitato",
+      "message": "Questa sezione è disponibile solo per gli amministratori."
+    },
+    "title": "Report",
+    "subtitle": "Genera un report aziendale mensile professionale, pronto da scaricare o stampare.",
+    "download": "Scarica / Stampa",
+    "loading": "Creazione del report...",
+    "docTitle": "Report aziendale mensile",
+    "tagline": "Studio di interior design",
+    "refNo": "Report n. SDG-{{ref}}",
+    "preparedBy": "Preparato da {{name}}",
+    "generatedOn": "Generato il {{date}}",
+    "periodRange": "Periodo: {{start}} – {{end}}",
+    "financials": {
+      "title": "Riepilogo finanziario",
+      "deposits": "Depositi dei clienti",
+      "investments": "Investito nei progetti",
+      "compensated": "Pagato ai designer",
+      "transactions": "Transazioni del portafoglio"
+    },
+    "compensatedProjects": {
+      "title": "Pagamenti ai designer",
+      "client": "Cliente",
+      "project": "Progetto",
+      "date": "Data",
+      "amount": "Importo",
+      "empty": "Nessun pagamento ai designer è stato effettuato in questo periodo."
+    },
+    "satisfaction": {
+      "title": "Soddisfazione dei clienti",
+      "responses": "Risposte di feedback",
+      "averageRating": "Valutazione media",
+      "none": "Ancora nessun feedback"
+    },
+    "snapshot": {
+      "title": "Panoramica aziendale",
+      "hint": "Cifre cumulative alla data di generazione del report, non limitate al periodo selezionato.",
+      "totalClients": "Totale clienti",
+      "activeProjects": "Progetti attivi / totali",
+      "taskCompletion": "Completamento delle attività",
+      "quotationApproval": "Preventivi approvati"
+    },
+    "footer": "Space Design Group — Report aziendale riservato, predisposto per uso interno."
+  },
+  "designerAccount": {
+    "transferSuccess": "Trasferito sul tuo conto personale.",
+    "transferError": "Trasferimento non riuscito. Riprova.",
+    "loading": "Caricamento account...",
+    "title": "Account",
+    "subtitle": "Tieni traccia dei tuoi guadagni dai progetti assegnati e trasferiscili sul tuo conto personale.",
+    "pendingAmount": "Importo in sospeso",
+    "assignedAmount": "Importo assegnato",
+    "personalAccount": "Conto personale",
+    "transferSectionTitle": "Trasferisci sul conto personale",
+    "amountLabel": "Importo",
+    "amountTooHigh": "Questo supera l'importo a te assegnato.",
+    "transferring": "Trasferimento in corso...",
+    "transferButton": "Trasferisci",
+    "historySectionTitle": "Cronologia delle transazioni",
+    "columnDate": "Data",
+    "columnType": "Tipo",
+    "columnAmount": "Importo",
+    "columnBalanceAfter": "Saldo dopo",
+    "typeTransferToPersonal": "TRASFERIMENTO SU CONTO PERSONALE",
+    "typeOther": "{{type}}",
+    "noTransactions": "Ancora nessuna transazione."
+  },
+  "designerDashboard": {
+    "approvalPending": "In attesa di revisione admin",
+    "approvalApproved": "Approvato",
+    "approvalRejected": "Non approvato",
+    "title": "La tua dashboard",
+    "subtitle": "Completa il tuo profilo professionale per aumentare la percentuale della tua candidatura.",
+    "loading": "Caricamento dashboard...",
+    "profileCompletion": "Completamento del profilo",
+    "cvScore": "Punteggio CV",
+    "interviewScore": "Punteggio colloquio",
+    "approvalStatus": "Stato di approvazione",
+    "profileCompletionSectionTitle": "Completamento del profilo",
+    "profileCompletionHint": "Carica il tuo CV, aggiungi i tuoi link GitHub/portfolio/altri e completa il tuo colloquio AI per raggiungere il 100%.",
+    "goToProfessionalBackground": "Vai al profilo professionale"
+  },
+  "designerMonitor": {
+    "accessRestrictedTitle": "Accesso limitato",
+    "accessRestrictedMessage": "Questa sezione è disponibile solo per gli amministratori.",
+    "approveSuccess": "Designer approvato.",
+    "approveError": "Impossibile approvare il designer.",
+    "rejectSuccess": "Designer rifiutato.",
+    "rejectError": "Impossibile rifiutare il designer.",
+    "title": "Monitor designer",
+    "subtitle": "Rivedi i punteggi AI del CV e del colloquio di ogni designer, poi approvalo o rifiutalo.",
+    "totalDesigners": "Totale designer",
+    "approved": "Approvati",
+    "pendingReview": "In attesa di revisione",
+    "designersSectionTitle": "Designer",
+    "loading": "Caricamento designer...",
+    "columnName": "Nome",
+    "columnEmail": "Email",
+    "columnCvScore": "Punteggio CV",
+    "columnInterviewScore": "Punteggio colloquio",
+    "columnStatus": "Stato",
+    "columnActions": "Azioni",
+    "statusPending": "In attesa",
+    "statusApproved": "Approvato",
+    "statusRejected": "Rifiutato",
+    "approveButton": "Approva",
+    "rejectButton": "Rifiuta",
+    "noDesigners": "Nessun designer ha ancora inviato un profilo."
+  },
+  "designPortfolio": {
+    "title": "Portfolio di design",
+    "subtitle": "Carica file di progetto, gestisci le versioni dei documenti e monitora le approvazioni.",
+    "totalDocuments": "Totale documenti",
+    "approved": "Approvati",
+    "awaitingReview": "In attesa di revisione",
+    "cancel": "Annulla",
+    "uploadDesignFile": "+ Carica file di progetto",
+    "uploadSectionTitle": "Carica file di progetto",
+    "projectLabel": "Progetto",
+    "selectProject": "Seleziona progetto",
+    "fileLabel": "File",
+    "noFileChosen": "Nessun file selezionato",
+    "uploading": "Caricamento...",
+    "upload": "Carica",
+    "loading": "Caricamento documenti...",
+    "noDesignFiles": "Ancora nessun file di progetto caricato.",
+    "projectFallbackName": "Progetto {{id}}",
+    "columnFile": "File",
+    "columnVersion": "Versione",
+    "columnStatus": "Stato",
+    "columnActions": "Azioni",
+    "statusPending": "In attesa",
+    "statusApproved": "Approvato",
+    "statusRejected": "Rifiutato",
+    "approveButton": "Approva",
+    "rejectButton": "Rifiuta",
+    "newVersionButton": "+ Versione"
+  },
+  "analyticsDashboard": {
+    "accessRestrictedTitle": "Accesso limitato",
+    "accessRestrictedMessage": "Le analisi sono disponibili solo per Project Manager e Amministratori.",
+    "computingSnapshot": "Calcolo della panoramica analitica...",
+    "title": "Dashboard analitica",
+    "subtitle": "Metriche in tempo reale calcolate da tutti i dati attivi del sistema.",
+    "refresh": "Aggiorna",
+    "notAvailable": "N/D",
+    "kpi": {
+      "totalClients": "Totale clienti",
+      "activeProjects": "Progetti attivi",
+      "avgProjectProgress": "Avanzamento medio progetti",
+      "taskCompletion": "Completamento attività",
+      "totalRequests": "Totale richieste",
+      "approvedRequests": "Richieste approvate",
+      "approvedQuotations": "Preventivi approvati",
+      "avgClientRating": "Valutazione media clienti"
+    },
+    "performanceRates": "Tassi di performance",
+    "rate": {
+      "taskCompletion": "Tasso di completamento attività",
+      "tasksCompletedOf": "{{completed}} di {{total}} attività completate",
+      "requestApproval": "Tasso di approvazione richieste",
+      "requestsApprovedOf": "{{approved}} di {{total}} richieste approvate",
+      "quotationApproval": "Tasso di approvazione preventivi",
+      "quotationsApprovedOf": "{{approved}} di {{total}} preventivi approvati",
+      "avgProjectProgress": "Avanzamento medio dei progetti",
+      "totalProjects": "{{total}} progetti totali"
+    },
+    "serviceDeliverySummary": "Riepilogo erogazione servizi",
+    "summary": {
+      "requests": "Richieste",
+      "requestsLine": "{{total}} totali • {{approved}} approvate • {{pending}} in attesa",
+      "projects": "Progetti",
+      "projectsLine": "{{total}} totali • {{active}} attivi • {{other}} altri",
+      "tasks": "Attività",
+      "tasksLine": "{{total}} totali • {{done}} completate • {{pending}} in attesa",
+      "clientSatisfaction": "Soddisfazione dei clienti",
+      "averageRating": "{{rating}} / 5 valutazione media",
+      "noFeedbackYet": "Ancora nessun feedback registrato"
+    }
+  },
+  "clientManagement": {
+    "accessRestrictedTitle": "Accesso limitato",
+    "accessRestrictedMessage": "La gestione utenti è disponibile solo per gli amministratori.",
+    "managerCreatedSuccess": "Account manager creato per {{name}}.",
+    "title": "Gestione utenti",
+    "subtitle": "Registra clienti, crea account manager e rivedi la cronologia delle comunicazioni.",
+    "kpi": {
+      "totalClients": "Totale clienti",
+      "withActiveHistory": "Con cronologia attiva"
+    },
+    "managerAccounts": "Account manager",
+    "managerAccountsNote": "Solo gli amministratori possono creare account Project Manager.",
+    "cancel": "Annulla",
+    "createManagerButton": "+ Crea manager",
+    "field": {
+      "fullName": "Nome completo",
+      "email": "Email",
+      "temporaryPassword": "Password temporanea",
+      "phone": "Telefono",
+      "propertyType": "Tipo di immobile"
+    },
+    "creating": "Creazione in corso...",
+    "createManagerAccountButton": "Crea account manager",
+    "registerNewClientButton": "+ Registra nuovo cliente",
+    "newClientRegistration": "Registrazione nuovo cliente",
+    "propertyType": {
+      "House": "Casa",
+      "Apartment": "Appartamento",
+      "Office": "Ufficio",
+      "Retail": "Negozio",
+      "Other": "Altro"
+    },
+    "saveClientButton": "Salva cliente",
+    "clientDatabase": "Database clienti",
+    "searchPlaceholder": "Cerca per nome o email...",
+    "loadingClients": "Caricamento clienti...",
+    "column": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "property": "Immobile",
+      "history": "Cronologia",
+      "actions": "Azioni"
+    },
+    "hide": "Nascondi",
+    "viewHistoryCount": "Visualizza ({{count}})",
+    "save": "Salva",
+    "edit": "Modifica",
+    "communicationHistory": "Cronologia delle comunicazioni",
+    "noEntriesYet": "Ancora nessuna voce.",
+    "logNotePlaceholder": "Registra una nota di comunicazione...",
+    "addNote": "Aggiungi nota",
+    "noClientsMatchSearch": "Nessun cliente corrisponde alla tua ricerca.",
+    "noClientsRegisteredYet": "Ancora nessun cliente registrato."
+  },
+  "compensation": {
+    "accessRestrictedTitle": "Accesso limitato",
+    "accessRestrictedMessage": "Questa sezione è disponibile solo per i project manager.",
+    "fundsReleasedSuccess": "Fondi rilasciati al designer.",
+    "failedToCompensate": "Compenso non riuscito.",
+    "title": "Compensi",
+    "subtitle": "Rilascia i fondi investiti ai designer una volta completati i progetti loro assegnati.",
+    "kpi": {
+      "assignedProjects": "Progetti assegnati",
+      "blockedInSystem": "Bloccato nel sistema"
+    },
+    "assignedProjects": "Progetti assegnati",
+    "loadingProjects": "Caricamento progetti...",
+    "column": {
+      "request": "Richiesta",
+      "assignedTo": "Assegnato a",
+      "status": "Stato",
+      "investedAmount": "Importo investito",
+      "compensated": "Compensato",
+      "actions": "Azioni"
+    },
+    "status": {
+      "NOT_READY": "Non pronto",
+      "PENDING": "In attesa",
+      "READY": "Pronto",
+      "PLANNING": "Pianificazione",
+      "ACTIVE": "Attivo",
+      "ON_HOLD": "In pausa",
+      "COMPLETED": "Completato",
+      "CANCELLED": "Annullato"
+    },
+    "compensating": "Erogazione compenso...",
+    "compensateButton": "Compensa",
+    "done": "Fatto",
+    "notYetCompleted": "Non ancora completato",
+    "noAssignedProjectsYet": "Ancora nessun progetto assegnato."
+  },
+  "customerFeedback": {
+    "selectProjectAndRating": "Seleziona un progetto e una valutazione a stelle.",
+    "leaveFeedback": "Lascia un feedback",
+    "customerFeedback": "Feedback dei clienti",
+    "clientSubtitle": "Valuta la tua esperienza e aiutaci a migliorare il nostro servizio.",
+    "staffSubtitle": "Visualizza i punteggi di soddisfazione e gestisci i feedback dei clienti.",
+    "kpi": {
+      "averageRating": "Valutazione media",
+      "totalResponses": "Totale risposte",
+      "fiveStarReviews": "Recensioni a 5 stelle"
+    },
+    "rateYourExperience": "Valuta la tua esperienza",
+    "submitOnBehalfOfClient": "Invia feedback per conto del cliente",
+    "thankYouRecorded": "Grazie — il tuo feedback è stato registrato.",
+    "field": {
+      "project": "Progetto",
+      "overallRating": "Valutazione complessiva",
+      "comments": "Commenti"
+    },
+    "selectProject": "Seleziona progetto",
+    "commentsPlaceholder": "Raccontaci la tua esperienza con questo progetto...",
+    "submitFeedbackButton": "Invia feedback",
+    "allFeedbackRecords": "Tutti i feedback registrati",
+    "loadingFeedback": "Caricamento feedback...",
+    "column": {
+      "client": "Cliente",
+      "rating": "Valutazione",
+      "comments": "Commenti",
+      "date": "Data"
+    },
+    "noFeedbackSubmittedYet": "Ancora nessun feedback inviato."
+  },
+  "adminPortfolio": {
+    "accessRestricted": {
+      "title": "Accesso limitato",
+      "message": "Questa sezione è disponibile solo per gli amministratori."
+    },
+    "title": "Portfolio",
+    "subtitle": "File di progetto validati, con analisi AI che consiglia quali milestone sembrano pronte per essere completate.",
+    "loading": "Caricamento portfolio...",
+    "empty": "Ancora nessun file di progetto approvato.",
+    "projectFallback": "Progetto {{id}}",
+    "analyzing": "Analisi in corso...",
+    "aiAnalysis": "Analisi AI",
+    "analysisFailed": "Analisi AI non riuscita.",
+    "recommendedComplete": "Consigliato di segnare come completato:",
+    "noMilestonesReady": "Nessuna milestone sembra ancora pronta.",
+    "goToProjectManagement": "Vai a Gestione progetti per spuntarle."
+  },
+  "homeController": {
+    "accessRestricted": {
+      "title": "Accesso limitato",
+      "message": "Questa sezione è disponibile solo per gli amministratori."
+    },
+    "noFileChosen": "Nessun file selezionato",
+    "uploadSuccess": "Video di sfondo aggiornato.",
+    "uploadError": "Caricamento del video non riuscito.",
+    "title": "Controller home",
+    "subtitle": "Carica il video di sfondo mostrato dietro le pagine di accesso, registrazione e password.",
+    "currentVideo": "Video attuale",
+    "loading": "Caricamento...",
+    "videoUpdatedAt": "{{fileName}} · aggiornato il {{date}}",
+    "noVideo": "Ancora nessun video di sfondo caricato: le pagine di autenticazione mostrano attualmente uno sfondo scuro semplice.",
+    "uploadNewVideo": "Carica nuovo video",
+    "videoFile": "File video",
+    "uploading": "Caricamento...",
+    "uploadVideo": "Carica video"
+  },
+  "professionalBackground": {
+    "loading": "Caricamento profilo professionale...",
+    "title": "Profilo professionale",
+    "subtitle": "Costruisci il tuo profilo e completa il tuo colloquio AI per aumentare il completamento del profilo.",
+    "tabs": {
+      "background": "Profilo professionale",
+      "interview": "Colloquio"
+    },
+    "cv": {
+      "title": "CV / Curriculum",
+      "currentFile": "File attuale:",
+      "notValidDocument": "⚠ Questo file non sembra un CV/curriculum.",
+      "strengthScore": "Punteggio di forza AI: {{score}}/10",
+      "uploadLabel": "Carica CV (PDF)",
+      "uploadingAndAnalyzing": "Caricamento e analisi in corso...",
+      "uploadButton": "Carica CV",
+      "noFileChosen": "Nessun file selezionato",
+      "uploadSuccess": "CV caricato e analizzato dall'AI.",
+      "uploadError": "Caricamento del CV non riuscito."
+    },
+    "links": {
+      "title": "Link",
+      "github": "GitHub",
+      "portfolio": "Portfolio",
+      "other": "Altro link",
+      "save": "Salva",
+      "saving": "Salvataggio...",
+      "saveSuccess": "Profilo professionale salvato.",
+      "saveError": "Salvataggio del profilo professionale non riuscito."
+    },
+    "interview": {
+      "title": "Colloquio AI",
+      "uploadCvFirst": "Carica prima il tuo CV nella scheda Profilo professionale.",
+      "questionProgress": "Domanda {{current}} di {{total}}",
+      "aiSpeaking": "— L'AI sta parlando...",
+      "repeatQuestion": "Ripeti la domanda",
+      "noSpeechSupport": "Il tuo browser non supporta la trascrizione vocale in tempo reale. Digita la tua risposta manualmente qui sotto.",
+      "micError": "Errore del microfono ({{error}}). Puoi comunque digitare la tua risposta qui sotto.",
+      "yourAnswer": "La tua risposta (trascrizione in tempo reale — puoi modificarla)",
+      "scoring": "Assegnazione punteggio...",
+      "nextQuestion": "Domanda successiva",
+      "send": "Invia",
+      "score": "Punteggio: {{score}}/10",
+      "retake": "Ripeti il colloquio",
+      "starting": "Avvio in corso...",
+      "description": "L'AI ti porrà 5 domande basate sul tuo CV, dal vivo, usando la tua fotocamera e il tuo microfono.",
+      "startInterview": "Inizia il colloquio",
+      "startError": "Impossibile avviare il colloquio. Assicurati che il tuo CV sia stato caricato.",
+      "scoreError": "Impossibile assegnare il punteggio al colloquio.",
+      "submitSuccess": "Colloquio inviato e valutato dall'AI."
+    }
+  },
+  "projectManagement": {
+    "status": {
+      "notReady": "Non pronto",
+      "pending": "In attesa",
+      "ready": "Pronto",
+      "planning": "Pianificazione",
+      "active": "Attivo",
+      "onHold": "In pausa",
+      "completed": "Completato",
+      "cancelled": "Annullato"
+    },
+    "untitledProject": "Progetto senza titolo",
+    "collapse": "Comprimi",
+    "viewTasks": "Visualizza attività",
+    "client": "Cliente:",
+    "projectStatus": "Stato del progetto",
+    "noMilestones": "Ancora nessuna milestone aggiunta.",
+    "addMilestonePlaceholder": "Aggiungi una milestone...",
+    "add": "Aggiungi",
+    "milestonesComplete": "{{achieved}} di {{total}} milestone completate",
+    "accessRestricted": {
+      "title": "Accesso limitato",
+      "message": "La gestione progetti è stata spostata al ruolo di Amministratore. Usa invece Attività e risorse o Compensi."
+    },
+    "myProjectsTitle": "I miei progetti",
+    "title": "Gestione progetti",
+    "clientSubtitle": "Monitora l'avanzamento dei tuoi progetti attivi e delle milestone.",
+    "subtitle": "Monitora i progetti attivi, aggiorna le milestone e tieni traccia dei progressi.",
+    "loading": "Caricamento progetti...",
+    "stats": {
+      "activeProjects": "Progetti attivi",
+      "totalProjects": "Totale progetti"
+    },
+    "tabs": {
+      "active": "Attivi ({{count}})",
+      "all": "Tutti i progetti ({{count}})"
+    },
+    "empty": {
+      "client": "Non hai ancora progetti attivi.",
+      "active": "Nessun progetto attivo al momento.",
+      "all": "Nessun progetto trovato."
+    },
+    "unassigned": {
+      "loading": "Caricamento progetti non assegnati...",
+      "loadError": "Impossibile caricare i progetti non assegnati.",
+      "title": "Progetti non assegnati",
+      "invested": "Investito: {{amount}}",
+      "assessing": "Valutazione in corso...",
+      "aiRequirementAssessment": "Valutazione AI dei requisiti",
+      "assessmentFailed": "Valutazione AI non riuscita.",
+      "aiRecommends": "L'AI consiglia: {{mode}} (complessità {{score}}/10)",
+      "selfCandidate": "Candidato singolo",
+      "staff": "Staff",
+      "selectApprovedDesigner": "Seleziona un designer approvato",
+      "selectStaffTeam": "Seleziona un team di staff",
+      "staffOptionLabel": "{{name}} ({{count}} membri)",
+      "assigning": "Assegnazione in corso...",
+      "assign": "Assegna",
+      "assignSuccess": "Progetto assegnato.",
+      "assignError": "Impossibile assegnare il progetto.",
+      "loadCandidatesError": "Impossibile caricare i candidati.",
+      "loadStaffError": "Impossibile caricare i team di staff."
+    },
+    "designerView": {
+      "loading": "Caricamento progetti...",
+      "title": "Progetti",
+      "subtitle": "I tuoi progetti assegnati e tutti i dettagli della richiesta del cliente.",
+      "empty": "Non hai ancora progetti assegnati.",
+      "viewClientRequestDetails": "Visualizza i dettagli della richiesta del cliente",
+      "loadingDetails": "Caricamento dettagli...",
+      "roomType": "Tipo di stanza",
+      "budget": "Budget",
+      "timeline": "Tempistica",
+      "requestDetails": "Dettagli della richiesta",
+      "styleTags": "Tag di stile",
+      "progressTitle": "Milestone",
+      "uploadPhoto": "Carica foto dei progressi",
+      "uploadingPhoto": "Caricamento...",
+      "photoHint": "Le foto che carichi vengono inviate ai File di progetto per la revisione del tuo Project Manager.",
+      "photoUploadSuccess": "Foto dei progressi caricata — il tuo Project Manager può esaminarla nei File di progetto.",
+      "photoUploadError": "Impossibile caricare la foto. Riprova."
+    }
+  },
+  "securityAccess": {
+    "accessRestricted": {
+      "title": "Accesso limitato",
+      "message": "Questa sezione è disponibile solo per gli amministratori di sistema."
+    },
+    "title": "Sicurezza e controllo degli accessi",
+    "subtitle": "Gestisci gli account utente, assegna i ruoli e rivedi il registro di controllo del sistema.",
+    "systemOverview": {
+      "title": "Panoramica del sistema",
+      "description": "Accesso amministrativo completo — gestisci tutte le autorizzazioni utente e i livelli di accesso."
+    },
+    "stats": {
+      "totalUsers": "Totale utenti",
+      "active": "Attivi",
+      "admins": "Amministratori"
+    },
+    "userManagement": {
+      "title": "Gestione utenti",
+      "searchPlaceholder": "Cerca per nome o email...",
+      "loading": "Caricamento utenti...",
+      "columns": {
+        "name": "Nome",
+        "email": "Email",
+        "role": "Ruolo",
+        "status": "Stato",
+        "actions": "Azioni"
+      },
+      "status": {
+        "active": "Attivo",
+        "disabled": "Disattivato"
+      },
+      "actions": {
+        "disable": "Disattiva",
+        "enable": "Attiva"
+      },
+      "noResults": "Nessun utente corrisponde alla tua ricerca."
+    },
+    "auditTrail": {
+      "title": "Registro di controllo del sistema",
+      "description": "Registro di sola lettura di tutte le azioni significative del sistema.",
+      "columns": {
+        "timestamp": "Data e ora",
+        "operator": "Operatore",
+        "action": "Azione eseguita"
+      },
+      "noResults": "Ancora nessuna voce di controllo registrata."
+    },
+    "roles": {
+      "CLIENT": "Cliente",
+      "STAFF": "Staff",
+      "PROJECT_MANAGER": "Project Manager",
+      "ADMIN": "Admin"
+    }
+  },
+  "staffDetail": {
+    "loading": "Caricamento team di staff...",
+    "subtitle": "Creato da {{creatorName}} · {{memberCount}} membro/i",
+    "tabs": {
+      "account": "Account",
+      "projects": "Progetti",
+      "designFiles": "File di progetto",
+      "messaging": "Messaggi"
+    },
+    "account": {
+      "title": "Account",
+      "pendingAmount": "Importo in sospeso",
+      "assignedAmount": "Importo assegnato",
+      "splitting": "Suddivisione in corso...",
+      "splitButton": "Suddividi l'importo assegnato"
+    },
+    "projects": {
+      "title": "Progetti assegnati",
+      "empty": "Ancora nessun progetto assegnato a questo staff.",
+      "columns": {
+        "client": "Cliente",
+        "request": "Richiesta",
+        "progress": "Avanzamento",
+        "status": "Stato"
+      }
+    },
+    "designFiles": {
+      "title": "File di progetto",
+      "projectLabel": "Progetto",
+      "selectProject": "Seleziona progetto",
+      "projectFallback": "Progetto {{id}}",
+      "uploadLabel": "Carica file di avanzamento",
+      "noFileChosen": "Nessun file selezionato",
+      "uploading": "Caricamento...",
+      "uploadButton": "Carica",
+      "columns": {
+        "file": "File",
+        "version": "Versione",
+        "status": "Stato"
+      },
+      "empty": "Ancora nessun file di progetto caricato."
+    },
+    "messaging": {
+      "title": "Messaggi",
+      "empty": "Ancora nessun messaggio. Saluta!",
+      "placeholder": "Scrivi un messaggio...",
+      "send": "Invia"
+    },
+    "success": {
+      "splitBalance": "Saldo suddiviso tra tutti i membri.",
+      "uploadFile": "File di avanzamento caricato."
+    },
+    "errors": {
+      "sendMessage": "Impossibile inviare il messaggio.",
+      "splitBalance": "Impossibile suddividere il saldo.",
+      "loadDesignFiles": "Impossibile caricare i file di progetto.",
+      "uploadFile": "Caricamento non riuscito."
+    },
+    "approvalStatus": {
+      "APPROVED": "Approvato",
+      "REJECTED": "Rifiutato",
+      "PENDING": "In attesa"
+    }
+  },
+  "staffHub": {
+    "title": "Staff",
+    "subtitle": "Crea o unisciti a un team di staff per collaborare con altri designer.",
+    "cancelButton": "Annulla",
+    "createButton": "+ Crea staff",
+    "createForm": {
+      "title": "Crea team di staff",
+      "teamNameLabel": "Nome del team",
+      "inviteHeading": "Invita designer approvati",
+      "columns": {
+        "name": "Nome",
+        "cvScore": "Punteggio CV",
+        "aiSummary": "Riepilogo AI"
+      },
+      "generating": "Generazione in corso...",
+      "aiSummaryButton": "Riepilogo AI",
+      "noCandidates": "Ancora nessun altro designer approvato.",
+      "creating": "Creazione in corso...",
+      "submitButton": "Crea e invita"
+    },
+    "invitations": {
+      "title": "Inviti",
+      "loading": "Caricamento inviti...",
+      "empty": "Nessun invito in sospeso.",
+      "columns": {
+        "staffTeam": "Team di staff",
+        "invited": "Invitato",
+        "actions": "Azioni"
+      },
+      "accept": "Accetta",
+      "decline": "Rifiuta"
+    },
+    "myStaffs": {
+      "title": "I miei staff",
+      "loading": "Caricamento staff...",
+      "empty": "Non fai ancora parte di alcun team di staff.",
+      "columns": {
+        "name": "Nome",
+        "creator": "Creatore",
+        "members": "Membri",
+        "assignedBalance": "Saldo assegnato"
+      },
+      "view": "Visualizza"
+    },
+    "success": {
+      "staffCreated": "Team di staff creato.",
+      "invitationAccepted": "Invito accettato.",
+      "invitationDeclined": "Invito rifiutato."
+    },
+    "errors": {
+      "loadCandidates": "Impossibile caricare i candidati.",
+      "aiSummary": "Impossibile generare il riepilogo AI.",
+      "createStaff": "Impossibile creare il team di staff.",
+      "acceptInvitation": "Impossibile accettare l'invito.",
+      "declineInvitation": "Impossibile rifiutare l'invito."
+    }
+  },
+  "tasksResources": {
+    "title": "Attività e risorse",
+    "titleStaff": "Le mie attività",
+    "subtitle": "Assegna, monitora e gestisci tutte le attività del progetto.",
+    "subtitleStaff": "Attività attualmente assegnate a te.",
+    "stats": {
+      "total": "Totale attività",
+      "completed": "Completate",
+      "pending": "In attesa",
+      "overdue": "In ritardo"
+    },
+    "createTask": {
+      "title": "Crea attività",
+      "projectLabel": "Progetto",
+      "selectProject": "Seleziona progetto",
+      "assignToLabel": "Assegna a",
+      "selectStaffMember": "Seleziona un membro dello staff",
+      "taskTitleLabel": "Titolo dell'attività",
+      "deadlineLabel": "Scadenza",
+      "submitButton": "Crea attività"
+    },
+    "taskReports": {
+      "title": "Report delle attività",
+      "loading": "Caricamento attività...",
+      "columns": {
+        "task": "Attività",
+        "project": "Progetto",
+        "assignedTo": "Assegnata a",
+        "deadline": "Scadenza",
+        "status": "Stato"
+      },
+      "overdueTag": "IN RITARDO",
+      "unassigned": "Non assegnata",
+      "noDate": "Nessuna data",
+      "status": {
+        "done": "Completata",
+        "overdue": "In ritardo",
+        "pending": "In attesa"
+      },
+      "noFilteredTasks": "Nessuna attività {{filter}}.",
+      "noTasks": "Nessuna attività trovata."
+    },
+    "filters": {
+      "ALL": "Tutte",
+      "PENDING": "In attesa",
+      "DONE": "Completate",
+      "OVERDUE": "In ritardo"
+    }
+  }
+}
