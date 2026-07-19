@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useMagnetic } from "../hooks/useMagnetic";
+import { useRequestLink } from "../hooks/useRequestLink";
 import "./CTA.css";
 
 export function CTA() {
   const { t } = useTranslation("marketing");
   const magneticRef = useMagnetic();
+  const requestLink = useRequestLink();
   return (
     <section id="cta" className="cta">
       <div className="container cta__inner reveal">
         <h2 className="cta__heading">{t("cta.heading")}</h2>
 
         <div className="cta__actions">
-          <Link to="/portal/register" className="btn btn-solid" ref={magneticRef}>
+          <Link to={requestLink} className="btn btn-solid" ref={magneticRef}>
             {t("cta.startProject")}
           </Link>
 

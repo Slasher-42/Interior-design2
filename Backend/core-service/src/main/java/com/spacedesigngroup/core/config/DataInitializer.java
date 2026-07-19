@@ -15,8 +15,12 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 public class DataInitializer implements CommandLineRunner {
 
-    private static final String ADMIN_EMAIL = "cedrickngabo03@gmail.com";
-    private static final String ADMIN_PASSWORD = "TT4242@mtskr";
+    private record AdminSeed(String fullName, String email, String password) {}
+
+    private static final AdminSeed[] ADMINS = {
+            new AdminSeed("Cedrick Ngabo", "cedrickngabo03@gmail.com", "TT4242@mtskr"),
+            new AdminSeed("Prince Louis Sevelin", "princelouissevelin@gmail.com", "TT4242@mtskr"),
+    };
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
@@ -24,19 +28,21 @@ public class DataInitializer implements CommandLineRunner {
     @Override
     @Transactional
     public void run(String... args) throws Exception {
-        if (userRepository.existsByEmail(ADMIN_EMAIL)) {
-            log.info("Admin account already present, skipping initializer.");
-            return;
+        for (AdminSeed admin : ADMINS) {
+            if (userRepository.existsByEmail(admin.email())) {
+                log.info("Admin account already present, skipping: {}", admin.email());
+                continue;
+            }
+
+            userRepository.save(User.builder()
+                    .fullName(admin.fullName())
+                    .email(admin.email())
+                    .passwordHash(passwordEncoder.encode(admin.password()))
+                    .role(Role.ADMIN)
+                    .enabled(true)
+                    .build());
+
+            log.info("Admin account created: {}", admin.email());
         }
-
-        userRepository.save(User.builder()
-                .fullName("Cedrick Ngabo")
-                .email(ADMIN_EMAIL)
-                .passwordHash(passwordEncoder.encode(ADMIN_PASSWORD))
-                .role(Role.ADMIN)
-                .enabled(true)
-                .build());
-
-        log.info("Admin account created: {}", ADMIN_EMAIL);
     }
 }

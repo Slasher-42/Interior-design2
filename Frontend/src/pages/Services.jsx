@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { SERVICES } from "../data/services";
+import { useRequestLink } from "../hooks/useRequestLink";
 import "./Services.css";
 
 export function Services() {
   const { t } = useTranslation("marketing");
+  const requestLink = useRequestLink();
   return (
     <section className="services-page">
       <div className="container">
@@ -28,7 +30,7 @@ export function Services() {
                 </p>
               </div>
               <Link
-                to="/portal/register"
+                to={requestLink}
                 className="btn btn-solid"
               >
                 {t("servicesPage.requestButton")}
