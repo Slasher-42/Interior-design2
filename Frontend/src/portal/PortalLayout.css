@@ -1220,3 +1220,164 @@
   color: var(--color-ink-soft);
   margin-top: 0.3rem;
 }
+
+/* ============================================================
+   DAVINCI DARK THEME — dashboards only
+   Scoped to .portal-layout so the public marketing site is
+   untouched. Overrides only presentation (colours, radius,
+   fonts); no layout structure or logic changes.
+   ============================================================ */
+.portal-layout {
+  --color-bg: #171718;
+  --color-bg-alt: #0c0c0d;
+  --color-ink: #f4f4f5;
+  --color-ink-soft: #8b8b90;
+  --color-accent: #e6e6e8;
+  --color-card: #1c1c1f;
+  --color-line: rgba(255, 255, 255, 0.08);
+  /* clean sans headings like the reference UI (no serif) */
+  --font-display: var(--font-body);
+  background: #0c0c0d;
+  color: var(--color-ink);
+}
+
+/* --- Sidebar: neutral dark, no warm glow --- */
+.portal-layout .portal-sidebar {
+  background:
+    radial-gradient(120% 40% at 15% -8%, rgba(255, 255, 255, 0.04), transparent 60%),
+    var(--sidebar-bg, #141416);
+  border-right: 1px solid var(--color-line);
+}
+.portal-layout .portal-sidebar__brand {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: none;
+}
+.portal-layout .portal-sidebar__link-icon {
+  background: rgba(255, 255, 255, 0.05);
+}
+.portal-layout .portal-sidebar__link.is-active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: none;
+}
+.portal-layout .portal-sidebar__link.is-active .portal-sidebar__link-icon {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+/* --- Main content: drop warm radials --- */
+.portal-layout .portal-content {
+  background: transparent;
+  max-width: 1240px;
+}
+
+/* --- Cards: rounder, dark, subtle depth --- */
+.portal-layout .portal-section,
+.portal-layout .portal-stat-card {
+  background: var(--color-card);
+  border-radius: 18px;
+  box-shadow: none;
+}
+.portal-layout .portal-section:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+.portal-layout .portal-stat-card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+.portal-layout .request-card,
+.portal-layout .gallery-item {
+  background: var(--color-card);
+  border-radius: 18px;
+}
+.portal-layout .request-card:hover,
+.portal-layout .gallery-item:hover {
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Buttons: white primary, subtle outline secondary --- */
+.portal-layout .btn {
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--color-ink);
+}
+.portal-layout .btn:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.portal-layout .btn:not(.btn-solid):hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+.portal-layout .btn-solid {
+  background: #f4f4f5;
+  border-color: #f4f4f5;
+  color: #111114;
+}
+.portal-layout .btn-solid:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #111114;
+}
+
+/* --- Header: fix light-on-light avatars/badges --- */
+.portal-layout .portal-header__icon-btn {
+  background: var(--color-card);
+  border-color: var(--color-line);
+}
+.portal-layout .portal-header__icon-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+.portal-layout .portal-header__avatar {
+  background: #2b2b2f;
+  color: #f4f4f5;
+}
+.portal-layout .account-avatar {
+  background: linear-gradient(135deg, #3a3a3f, #1c1c1f);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.06);
+}
+.portal-layout .portal-header__badge {
+  background: #f4f4f5;
+  color: #111114;
+}
+
+/* --- Feature banner: neutral dark --- */
+.portal-layout .portal-role-banner {
+  background: linear-gradient(135deg, #1c1c1f 0%, #101012 100%);
+  border: 1px solid var(--color-line);
+}
+.portal-layout .portal-role-banner::before {
+  background: radial-gradient(120% 60% at 8% -10%, rgba(255, 255, 255, 0.05), transparent 60%);
+}
+.portal-layout .portal-role-banner__stat-value {
+  color: #fff;
+}
+
+/* --- Tabs active: neutral pill --- */
+.portal-layout .staff-tab.is-active,
+.portal-layout .gallery-tab.is-active {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* --- Own chat bubble: white --- */
+.portal-layout .staff-chat__row--mine .staff-chat__bubble {
+  background: #f4f4f5;
+  border-color: #f4f4f5;
+  color: #111114;
+}
+
+/* --- Overdue table row on dark --- */
+.portal-layout .portal-table tr.is-overdue td {
+  background: rgba(239, 68, 68, 0.08);
+}
+.portal-layout .portal-table tr.is-overdue td:first-child {
+  border-left-color: #ef4444;
+}
+
+/* --- Progress fill: light neutral --- */
+.portal-layout .progress-bar__fill {
+  background: linear-gradient(90deg, #e6e6e8, #ffffff);
+}
