@@ -1,5 +1,5 @@
 export const SIDEBAR_COLORS = [
-  { name: "Carbon",       value: "#141416" },
+  { name: "Black",        value: "#0a0a0a" },
   { name: "Charcoal",     value: "#211f1a" },
   { name: "Midnight",     value: "#0f172a" },
   { name: "Slate",        value: "#1e293b" },
