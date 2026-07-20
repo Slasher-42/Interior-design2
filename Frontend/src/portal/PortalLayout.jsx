@@ -1,11 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import { NavLink, Link, Outlet, Navigate, useNavigate } from "react-router-dom";
+import { Outlet, Navigate, useNavigate, NavLink, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "./auth/AuthContext";
 import { useTheme } from "../theme/ThemeContext";
-import { NAV_ICONS, HomeIcon, UserCircleIcon, PaletteIcon } from "./navIcons";
+import { NAV_ICONS, HomeIcon, UserCircleIcon } from "./navIcons";
 import { PortalHeader } from "./PortalHeader";
-import { SIDEBAR_COLORS, SIDEBAR_COLOR_STORAGE_KEY } from "./sidebarColors";
 import { useToast } from "../components/toast/ToastContext";
 import "./PortalLayout.css";
 
@@ -69,19 +67,6 @@ export function PortalLayout() {
   const { theme, toggleTheme } = useTheme();
   const { showSuccess } = useToast();
   const navigate = useNavigate();
-  const [sidebarColor, setSidebarColor] = useState(
-    () => (typeof window !== "undefined" && window.localStorage.getItem(SIDEBAR_COLOR_STORAGE_KEY)) || SIDEBAR_COLORS[0].value
-  );
-  const [colorPickerOpen, setColorPickerOpen] = useState(false);
-  const colorPickerRef = useRef(null);
-
-  useEffect(() => {
-    function handleClickOutside(e) {
-      if (colorPickerRef.current && !colorPickerRef.current.contains(e.target)) setColorPickerOpen(false);
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   if (!user) return <Navigate to="/portal/login" replace />;
 
@@ -94,15 +79,9 @@ export function PortalLayout() {
     navigate("/portal/login", { replace: true });
   }
 
-  function handlePickSidebarColor(color) {
-    setSidebarColor(color);
-    window.localStorage.setItem(SIDEBAR_COLOR_STORAGE_KEY, color);
-    setColorPickerOpen(false);
-  }
-
   return (
     <div className="portal-layout">
-      <aside className="portal-sidebar" style={{ "--sidebar-bg": sidebarColor }}>
+      <aside className="portal-sidebar">
         <div className="portal-sidebar__header">
           <span className="portal-sidebar__brand">Space Design Group</span>
           <span className="portal-sidebar__sub">{t("sidebar.managementPortal")}</span>
@@ -117,34 +96,6 @@ export function PortalLayout() {
           </Link>
 
           <div className="portal-sidebar__spacer" />
-
-          <div className="portal-sidebar__color-picker" ref={colorPickerRef}>
-            <button
-              type="button"
-              className="portal-sidebar__tool"
-              title={t("sidebar.sidebarColour")}
-              aria-label={t("sidebar.changeSidebarColour")}
-              onClick={() => setColorPickerOpen((v) => !v)}
-            >
-              <PaletteIcon />
-            </button>
-
-            {colorPickerOpen && (
-              <div className="portal-sidebar__color-popover" role="group" aria-label={t("sidebar.sidebarColour")}>
-                {SIDEBAR_COLORS.map((c) => (
-                  <button
-                    key={c.value}
-                    type="button"
-                    className={"portal-sidebar__swatch" + (c.value === sidebarColor ? " is-selected" : "")}
-                    style={{ background: c.value }}
-                    title={c.name}
-                    aria-label={t("sidebar.sidebarColourNamed", { name: c.name })}
-                    onClick={() => handlePickSidebarColor(c.value)}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
         </div>
 
         <nav className="portal-sidebar__nav" aria-label="Portal modules">

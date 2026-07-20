@@ -4,8 +4,8 @@ const ThemeContext = createContext(null);
 const THEME_STORAGE_KEY = "sdg_theme";
 
 function getInitialTheme() {
-  if (typeof window === "undefined") return "light";
-  return window.localStorage.getItem(THEME_STORAGE_KEY) || "light";
+  if (typeof window === "undefined") return "dark";
+  return window.localStorage.getItem(THEME_STORAGE_KEY) || "dark";
 }
 
 export function ThemeProvider({ children }) {
