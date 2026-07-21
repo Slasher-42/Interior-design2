@@ -47,7 +47,6 @@ const ROLE_MENUS = {
     { to: "design-files",     key: "nav.portfolio" },
     { to: "analytics",        key: "nav.analyticsDashboard" },
     { to: "reports",          key: "nav.reports" },
-    { to: "home-controller",  key: "nav.homeController" },
     { to: "notifications",    key: "nav.notifications" },
     { to: "security",         key: "nav.securityAndAccess" },
   ],
