@@ -70,8 +70,8 @@ function App() {
           <Routes>
             {/* Public marketing site */}
             <Route path="/" element={<PublicLayout />}>
-              <Route index                  element={<Home />} />
-              <Route path="features/interior-design" element={<InteriorDesignFeatures />} />
+              <Route index                  element={<InteriorDesignFeatures />} />
+              <Route path="classic-home"    element={<Home />} />
               <Route path="portfolio"       element={<Portfolio />} />
               <Route path="portfolio/:slug" element={<ProjectDetail />} />
               <Route path="services"        element={<Services />} />

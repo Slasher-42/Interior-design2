@@ -201,7 +201,8 @@ export function InteriorDesignFeatures() {
       {/* HOW IT WORKS */}
       <section className="idf-steps">
         <header className="idf-section-head">
-          <h2>How it works</h2>
+          <span className="idf-kicker">How it works</span>
+          <h2>Share it. We design it. Done.</h2>
           <p>Three steps from a photo of your room to a plan you can build.</p>
         </header>
         <div className="idf-steps__grid">
@@ -224,8 +225,8 @@ export function InteriorDesignFeatures() {
       {/* FEATURE ROWS */}
       <section className="idf-features">
         <header className="idf-section-head">
-          <h2>Every space. One team.</h2>
-          <p>Whatever you are changing, you see it finished first.</p>
+          <span className="idf-kicker">Every problem. One team.</span>
+          <h2>Whatever you change, see it finished first.</h2>
         </header>
         {FEATURES.map((f, i) => (
           <article
@@ -248,8 +249,8 @@ export function InteriorDesignFeatures() {
       {/* TESTIMONIALS */}
       <section className="idf-testimonials">
         <header className="idf-section-head">
-          <h2>Real people. Real rooms.</h2>
-          <p>They almost hired someone to guess for them.</p>
+          <span className="idf-kicker">Real people. Real rooms.</span>
+          <h2>They almost hired someone to guess.</h2>
         </header>
         <div className="idf-testimonials__grid">
           {TESTIMONIALS.map((t) => (
@@ -271,6 +272,7 @@ export function InteriorDesignFeatures() {
       {/* PACKAGES (was pricing) */}
       <section className="idf-packages">
         <header className="idf-section-head">
+          <span className="idf-kicker">Packages</span>
           <h2>Pick your package</h2>
           <p>Every project is quoted to your space and scope — no fixed menu, no surprises.</p>
         </header>
