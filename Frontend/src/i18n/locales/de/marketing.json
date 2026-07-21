@@ -313,5 +313,158 @@
     "previous": "Zurück",
     "next": "Weiter",
     "trustedBy": "Vertraut von führenden Unternehmen"
+  },
+  "featuresPage": {
+    "hero": {
+      "eyebrow": "Innen- & Außendesign",
+      "title": "Dein Raum, neu gestaltet — bevor du einen Franken ausgibst.",
+      "lead": "Fehler bei der Renovierung sind teuer. Space Design Group zeigt dir genau, wie dein Raum aussehen und was er kosten wird — bevor ein einziges Möbelstück bewegt wird.",
+      "ctaPrimary": "Design anfragen",
+      "ctaSecondary": "Unsere Arbeiten ansehen",
+      "cardMain": "Innen",
+      "cardLeft": "Wohnzimmer",
+      "cardRight": "Außen"
+    },
+    "proof": "Für Eigentümer und Unternehmen, die lieber sehen als raten.",
+    "steps": {
+      "kicker": "So funktioniert's",
+      "title": "Teilen. Wir gestalten. Fertig.",
+      "sub": "Drei Schritte von einem Foto deines Raums zu einem umsetzbaren Plan.",
+      "cta": "Anfrage starten",
+      "items": [
+        {
+          "title": "Teile deinen Raum",
+          "body": "Lade Fotos des Raums hoch und nenne uns dein Budget, deinen Stil und wie du den Raum nutzt. Das dauert nur wenige Minuten."
+        },
+        {
+          "title": "Erhalte einen KI-gestützten Plan",
+          "body": "Unsere Plattform und Designer verwandeln deinen Raum in einen visuellen, kalkulierten Plan — Grundriss, Materialien und Möbel an einem Ort."
+        },
+        {
+          "title": "Freigeben, und wir setzen um",
+          "body": "Gib die Richtung frei und wir betreuen das Projekt bis zur Montage und koordinieren deinen Handwerker, damit nichts verloren geht."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Jedes Problem. Ein Team.",
+      "title": "Was du auch änderst — sieh es zuerst fertig.",
+      "link": "Meins gestalten",
+      "items": [
+        {
+          "tag": "Innendesign",
+          "title": "Der Raum, den du willst — bevor du einen Franken einsetzt",
+          "body": "Fehler bei der Renovierung sind teuer. Teste Grundrisse, Farbpaletten und Möbel an deinem echten Raum und sieh das fertige Ergebnis, bevor die Arbeiten beginnen."
+        },
+        {
+          "tag": "Außen & Garten",
+          "title": "Dein Außenbereich, neu gedacht",
+          "body": "Fassaden, Gärten und Außenbereiche werden zuerst geplant und visualisiert — damit du in die Version investierst, die du schon liebst."
+        },
+        {
+          "tag": "Möbel & Styling",
+          "title": "Tausch aus, was nicht passt",
+          "body": "Das Sofa, das du bereust? Weg. Tausche ein einzelnes Stück — einen Teppich, eine Leuchte, einen Tisch — und sieh, wie sich der ganze Raum verändert."
+        },
+        {
+          "tag": "Materialien & Oberflächen",
+          "title": "Teste Oberflächen, bevor du kaufst",
+          "body": "Böden, Fliesen und Oberflächen sind die teuersten Fehler in jedem Zuhause. Sieh jede Oberfläche in deinem Raum in der Vorschau, damit du nur einmal kaufst."
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Echte Menschen. Echte Räume.",
+      "title": "Sie hätten fast jemanden zum Raten engagiert.",
+      "items": [
+        {
+          "quote": "Ich zeigte meinem Handwerker den Plan und er baute ihn genau so. Keine Überarbeitungen, keine Überraschungen, keine Diskussionen darüber, was ich meinte.",
+          "role": "Eigentümer, Kigali"
+        },
+        {
+          "quote": "Wir wollten fast einen Designer für ein Vermögen engagieren. Space Design Group lieferte den gesamten Grundriss vorab kalkuliert — wir wussten, wofür wir zahlten.",
+          "role": "Wohnungsrenovierung"
+        },
+        {
+          "quote": "Den Raum fertig zu sehen, bevor wir etwas ausgaben, überzeugte uns. Wir änderten die Farbpalette zweimal am Bildschirm statt in echt.",
+          "role": "Auffrischung eines Raums"
+        },
+        {
+          "quote": "Sie richteten unser Büro komplett ein — Grundriss, Beleuchtung, Möbel. Ein Team, ein Plan, und pünktlich geliefert.",
+          "role": "Gewerbeausbau"
+        }
+      ]
+    },
+    "packages": {
+      "kicker": "Pakete",
+      "title": "Wähle dein Paket",
+      "sub": "Jedes Projekt wird nach Raum und Umfang kalkuliert — kein festes Menü, keine Überraschungen.",
+      "price": "Individuelles Angebot",
+      "cta": "Das anfragen",
+      "badge": "Am beliebtesten",
+      "items": [
+        {
+          "name": "Auffrischung eines Raums",
+          "tagline": "Ein Raum, in Wochen gelöst.",
+          "features": [
+            "Gezielte Neugestaltung eines Raums",
+            "Grundriss-, Farb- & Möbelplan",
+            "Visuelles Konzept vor dem Kauf",
+            "Einkaufsliste zum Loslegen"
+          ]
+        },
+        {
+          "name": "Komplettes Hausdesign",
+          "tagline": "Jeder Raum, ein verantwortliches Team.",
+          "features": [
+            "Durchgängiges Design, alle Räume",
+            "Grundriss & Materialien",
+            "Möbel & Styling betreut",
+            "Projekt bis zur Montage betreut",
+            "Ein Team, von der Skizze bis zum Finish"
+          ]
+        },
+        {
+          "name": "Gewerbeausbau",
+          "tagline": "Arbeits- und Gastgewerberäume.",
+          "features": [
+            "Grundriss, Beleuchtung & Materialien",
+            "Möbelbeschaffung",
+            "Handwerker-Koordination",
+            "Für Büros, Studios, Einzelhandel"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "cta": "Sprich mit uns",
+      "items": [
+        {
+          "q": "Was macht Space Design Group genau?",
+          "a": "Wir gestalten Innen- und Außenbereiche und betreuen das Projekt bis zur Montage. Du teilst deinen Raum, wir liefern einen visuellen, kalkulierten Plan — und wenn du freigibst, setzen wir ihn um."
+        },
+        {
+          "q": "Wie läuft der Prozess ab?",
+          "a": "Reiche deinen Raum mit Fotos und Vorlieben ein, erhalte eine KI-gestützte Design-Bewertung und gib dann den Plan frei. Danach koordinieren wir die Arbeiten bis zur Fertigstellung."
+        },
+        {
+          "q": "Welche Stile bietet ihr an?",
+          "a": "Von warmem Minimalismus bis klassisch und modern — der Plan wird um deinen Geschmack, deinen Raum und dein Budget herum gebaut, nicht um eine feste Vorlage."
+        },
+        {
+          "q": "Könnt ihr nur einen Raum neu gestalten?",
+          "a": "Ja. Die Auffrischung eines Raums konzentriert sich auf einen einzigen Raum — Wohnzimmer, Schlafzimmer oder Büro — ohne den Umfang eines Komplettprojekts."
+        },
+        {
+          "q": "Arbeitet ihr mit Unternehmen?",
+          "a": "Ja. Unser Gewerbeausbau umfasst Büros, Studios, Gastgewerbe und Einzelhandel — Grundriss, Beleuchtung, Materialien und Möbelbeschaffung, koordiniert mit deinem Handwerker."
+        },
+        {
+          "q": "Was passiert mit meinen Fotos?",
+          "a": "Deine Fotos werden nur zur Vorbereitung deines Designs und deiner Bewertung verwendet. Sie sind mit deinem Konto verknüpft und werden nicht verkauft oder für andere Zwecke geteilt."
+        }
+      ]
+    }
   }
 }

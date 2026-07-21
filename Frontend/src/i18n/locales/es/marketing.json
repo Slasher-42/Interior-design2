@@ -313,5 +313,158 @@
     "previous": "Anterior",
     "next": "Siguiente",
     "trustedBy": "Confían en nosotros"
+  },
+  "featuresPage": {
+    "hero": {
+      "eyebrow": "Diseño de interiores y exteriores",
+      "title": "Tu espacio, rediseñado — antes de gastar un franco.",
+      "lead": "Equivocarse en una reforma es caro. Space Design Group te muestra exactamente cómo quedará tu habitación y cuánto costará — antes de mover un solo mueble.",
+      "ctaPrimary": "Solicitar un diseño",
+      "ctaSecondary": "Ver nuestro trabajo",
+      "cardMain": "Interior",
+      "cardLeft": "Salón",
+      "cardRight": "Exterior"
+    },
+    "proof": "Para propietarios y empresas que prefieren verlo antes que adivinar.",
+    "steps": {
+      "kicker": "Cómo funciona",
+      "title": "Compártelo. Lo diseñamos. Listo.",
+      "sub": "Tres pasos, de una foto de tu habitación a un plan que puedes construir.",
+      "cta": "Iniciar mi solicitud",
+      "items": [
+        {
+          "title": "Comparte tu espacio",
+          "body": "Sube fotos de la habitación y cuéntanos tu presupuesto, tu estilo y cómo usas el espacio. Toma unos minutos."
+        },
+        {
+          "title": "Recibe un plan asistido por IA",
+          "body": "Nuestra plataforma y nuestros diseñadores convierten tu espacio en un plan visual y presupuestado — distribución, materiales y mobiliario, todo en un lugar."
+        },
+        {
+          "title": "Aprueba y lo ejecutamos",
+          "body": "Aprueba la dirección y gestionamos el proyecto hasta la instalación, coordinando a tu contratista para que nada se pierda."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Cada problema. Un equipo.",
+      "title": "Cambies lo que cambies, míralo terminado primero.",
+      "link": "Diseñar el mío",
+      "items": [
+        {
+          "tag": "Diseño de interiores",
+          "title": "La habitación que quieres — antes de gastar un franco",
+          "body": "Equivocarse en una reforma es caro. Prueba distribuciones, paletas y muebles en tu habitación real y ve el resultado final antes de empezar la obra."
+        },
+        {
+          "tag": "Exterior y jardín",
+          "title": "Tu exterior, reimaginado",
+          "body": "Fachadas, jardines y espacios exteriores diseñados y visualizados primero — para que inviertas en la versión que ya te encanta."
+        },
+        {
+          "tag": "Mobiliario y decoración",
+          "title": "Cambia lo que no funciona",
+          "body": "¿Ese sofá del que te arrepientes? Fuera. Cambia una sola pieza — una alfombra, una lámpara, una mesa — y ve cómo cambia toda la habitación."
+        },
+        {
+          "tag": "Materiales y acabados",
+          "title": "Prueba los acabados antes de comprar",
+          "body": "Suelos, azulejos y superficies son los errores más caros de una casa. Previsualiza cada acabado en tu espacio para comprar solo una vez."
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Personas reales. Habitaciones reales.",
+      "title": "Casi contratan a alguien para adivinar.",
+      "items": [
+        {
+          "quote": "Le mostré el plan a mi contratista y lo construyó exactamente así. Sin revisiones, sin sorpresas, sin discusiones sobre lo que quería decir.",
+          "role": "Propietario, Kigali"
+        },
+        {
+          "quote": "Íbamos a contratar a un diseñador por una fortuna. Space Design Group nos dio toda la distribución presupuestada por adelantado — sabíamos qué pagábamos.",
+          "role": "Reforma de apartamento"
+        },
+        {
+          "quote": "Ver la habitación terminada antes de gastar nada nos convenció. Cambiamos la paleta dos veces en pantalla en lugar de en la vida real.",
+          "role": "Renovación de una habitación"
+        },
+        {
+          "quote": "Equiparon nuestra oficina de principio a fin — distribución, iluminación, mobiliario. Un equipo, un plan, y entregado a tiempo.",
+          "role": "Proyecto comercial"
+        }
+      ]
+    },
+    "packages": {
+      "kicker": "Paquetes",
+      "title": "Elige tu paquete",
+      "sub": "Cada proyecto se presupuesta según tu espacio y alcance — sin menú fijo, sin sorpresas.",
+      "price": "Presupuesto a medida",
+      "cta": "Solicitar esto",
+      "badge": "Más elegido",
+      "items": [
+        {
+          "name": "Renovación de una habitación",
+          "tagline": "Una habitación, resuelta en semanas.",
+          "features": [
+            "Rediseño enfocado de una habitación",
+            "Plan de distribución, paleta y mobiliario",
+            "Concepto visual antes de comprar",
+            "Lista de compras lista para usar"
+          ]
+        },
+        {
+          "name": "Diseño de casa completa",
+          "tagline": "Cada habitación, un equipo responsable.",
+          "features": [
+            "Diseño integral, todas las habitaciones",
+            "Distribución y materiales",
+            "Mobiliario y decoración gestionados",
+            "Proyecto gestionado hasta la instalación",
+            "Un equipo, del boceto al acabado"
+          ]
+        },
+        {
+          "name": "Proyecto comercial",
+          "tagline": "Espacios de trabajo y hostelería.",
+          "features": [
+            "Distribución, iluminación y materiales",
+            "Adquisición de mobiliario",
+            "Coordinación del contratista",
+            "Para oficinas, estudios, comercios"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "cta": "Hablemos",
+      "items": [
+        {
+          "q": "¿Qué hace exactamente Space Design Group?",
+          "a": "Diseñamos interiores y exteriores y gestionamos el proyecto hasta la instalación. Compartes tu espacio, devolvemos un plan visual presupuestado y — si lo apruebas — lo ejecutamos."
+        },
+        {
+          "q": "¿Cómo funciona el proceso?",
+          "a": "Envía tu espacio con fotos y preferencias, recibe una evaluación de diseño asistida por IA y luego aprueba el plan. A partir de ahí coordinamos la obra hasta terminar."
+        },
+        {
+          "q": "¿Qué estilos ofrecéis?",
+          "a": "Del minimalismo cálido al clásico y el contemporáneo — el plan se construye en torno a tu gusto, tu espacio y tu presupuesto, no a una plantilla fija."
+        },
+        {
+          "q": "¿Podéis rediseñar solo una habitación?",
+          "a": "Sí. La Renovación de una habitación se centra en un solo espacio — salón, dormitorio u oficina — sin el alcance de un proyecto completo."
+        },
+        {
+          "q": "¿Trabajáis con empresas?",
+          "a": "Sí. Nuestro Proyecto comercial cubre oficinas, estudios, hostelería y comercios — distribución, iluminación, materiales y adquisición de mobiliario, coordinados con tu contratista."
+        },
+        {
+          "q": "¿Qué pasa con mis fotos?",
+          "a": "Tus fotos se usan solo para preparar tu diseño y evaluación. Están vinculadas a tu cuenta y no se venden ni comparten para otros fines."
+        }
+      ]
+    }
   }
 }

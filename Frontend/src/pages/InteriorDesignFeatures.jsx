@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./InteriorDesignFeatures.css";
 
 import heroImg from "../assets/images/showcase-1.jpg";
@@ -14,156 +15,14 @@ import client2 from "../assets/images/team-2.jpg";
 import client3 from "../assets/images/team-3.jpg";
 import client4 from "../assets/images/team-4.jpg";
 
-const STEPS = [
-  {
-    n: "01",
-    title: "Share your space",
-    body: "Upload photos of the room and tell us your budget, your style, and how you actually use the space. It takes a few minutes.",
-    img: stepShare,
-  },
-  {
-    n: "02",
-    title: "Get an AI-assisted plan",
-    body: "Our platform and designers turn your space into a costed, visual plan — layout, materials, and furniture, all in one place.",
-    img: stepAssess,
-  },
-  {
-    n: "03",
-    title: "Approve, and we deliver",
-    body: "Approve the direction and we manage the project through to install, coordinating your contractor so nothing gets lost.",
-    img: stepDeliver,
-  },
-];
-
-const FEATURES = [
-  {
-    tag: "Interior design",
-    title: "The room you want — before you commit a franc",
-    body: "Renovating is expensive to get wrong. Test layouts, palettes, and furniture on your actual room and see the finished result before any work begins.",
-    img: featInterior,
-  },
-  {
-    tag: "Exterior & outdoor",
-    title: "Your exterior, reimagined",
-    body: "Facades, gardens, and outdoor living spaces designed and visualised first — so you invest in the version you already know you love.",
-    img: featExterior,
-  },
-  {
-    tag: "Furniture & styling",
-    title: "Swap what isn't working",
-    body: "That sofa you regret? Gone. Replace a single piece — a rug, a fixture, a table — and see how the whole room changes around it.",
-    img: featFurniture,
-  },
-  {
-    tag: "Materials & finishes",
-    title: "Test finishes before you buy",
-    body: "Floors, tiles, and surfaces are the most expensive mistakes in any home. Preview every finish in your space so you only buy once.",
-    img: featFinishes,
-  },
-];
-
-const TESTIMONIALS = [
-  {
-    quote:
-      "I showed the plan to my contractor and he built it exactly like that. No revisions, no surprises, no arguments about what I meant.",
-    name: "Eric M.",
-    role: "Homeowner, Kigali",
-    img: client1,
-  },
-  {
-    quote:
-      "We were about to hire a designer for a fortune. Space Design Group gave us the whole layout costed up front — we knew what we were paying for.",
-    name: "Aline U.",
-    role: "Apartment renovation",
-    img: client2,
-  },
-  {
-    quote:
-      "Seeing the room finished before we spent anything is what sold us. We changed the palette twice on screen instead of in real life.",
-    name: "Patrick H.",
-    role: "Single room refresh",
-    img: client3,
-  },
-  {
-    quote:
-      "They fit out our office end to end — layout, lighting, furniture. One team, one plan, and it actually came in on schedule.",
-    name: "Diane K.",
-    role: "Commercial fit-out",
-    img: client4,
-  },
-];
-
-const PACKAGES = [
-  {
-    name: "Single Room Refresh",
-    tagline: "One room, resolved in weeks.",
-    features: [
-      "Focused redesign of one room",
-      "Layout, palette & furniture plan",
-      "Visual concept before you buy",
-      "Sourcing list you can act on",
-    ],
-    cta: "Request this",
-    highlight: false,
-  },
-  {
-    name: "Full Home Design",
-    tagline: "Every room, one accountable team.",
-    features: [
-      "End-to-end design, all rooms",
-      "Space planning & materials",
-      "Furniture & styling managed",
-      "Project managed to install",
-      "One team, first sketch to final",
-    ],
-    cta: "Request this",
-    highlight: true,
-    badge: "Most popular",
-  },
-  {
-    name: "Commercial Fit-Out",
-    tagline: "Workplaces and hospitality spaces.",
-    features: [
-      "Layout, lighting & materials",
-      "Furniture procurement",
-      "Contractor coordination",
-      "Built for offices, studios, retail",
-    ],
-    cta: "Request this",
-    highlight: false,
-  },
-];
-
-const FAQS = [
-  {
-    q: "What does Space Design Group actually do?",
-    a: "We design interiors and exteriors and manage the project through to install. You share your space, we return a costed visual plan, and — if you approve — we deliver it.",
-  },
-  {
-    q: "How does the process work?",
-    a: "Submit your space with photos and preferences, receive an AI-assisted design assessment, then approve the plan. From there we coordinate the work to completion.",
-  },
-  {
-    q: "What styles do you cover?",
-    a: "From warm minimalism to classic and contemporary — the plan is built around your taste, your space, and your budget, not a fixed template.",
-  },
-  {
-    q: "Can you redesign just one room?",
-    a: "Yes. A Single Room Refresh focuses on one space — a living room, bedroom, or office — without the scope of a full-home project.",
-  },
-  {
-    q: "Do you work with businesses?",
-    a: "Yes. Our Commercial Fit-Out covers offices, studios, hospitality, and retail — layout, lighting, materials, and furniture procurement, coordinated with your contractor.",
-  },
-  {
-    q: "What happens to my photos?",
-    a: "Your photos are used only to prepare your design and assessment. They are tied to your account and are not sold or shared for anything else.",
-  },
-];
+const STEP_IMAGES = [stepShare, stepAssess, stepDeliver];
+const FEATURE_IMAGES = [featInterior, featExterior, featFurniture, featFinishes];
+const TESTIMONIAL_IMAGES = [client1, client2, client3, client4];
+const TESTIMONIAL_NAMES = ["Eric M.", "Aline U.", "Patrick H.", "Diane K."];
 
 function Stars() {
   return (
-    <div className="idf-stars" aria-label="5 out of 5 stars">
+    <div className="idf-stars" aria-label="5 / 5">
       {"★★★★★".split("").map((s, i) => (
         <span key={i}>★</span>
       ))}
@@ -172,45 +31,66 @@ function Stars() {
 }
 
 export function InteriorDesignFeatures() {
+  const { t } = useTranslation("marketing");
+
+  const steps = t("featuresPage.steps.items", { returnObjects: true });
+  const features = t("featuresPage.features.items", { returnObjects: true });
+  const testimonials = t("featuresPage.testimonials.items", { returnObjects: true });
+  const packages = t("featuresPage.packages.items", { returnObjects: true });
+  const faqs = t("featuresPage.faq.items", { returnObjects: true });
+
   return (
     <main className="idf">
       {/* HERO */}
       <section className="idf-hero">
-        <p className="idf-eyebrow">Interior &amp; exterior design</p>
-        <h1 className="idf-hero__title">
-          Your space, redesigned —<br />before you spend a franc.
-        </h1>
-        <p className="idf-hero__lead">
-          Renovating is expensive to get wrong. Space Design Group shows you exactly how your
-          room will look and what it will cost — before a single piece of furniture moves.
-        </p>
-        <div className="idf-hero__actions">
-          <Link to="/request" className="idf-btn idf-btn--solid">Request a design</Link>
-          <Link to="/portfolio" className="idf-btn">See our work</Link>
+        <div className="idf-hero__text">
+          <p className="idf-eyebrow">{t("featuresPage.hero.eyebrow")}</p>
+          <h1 className="idf-hero__title">{t("featuresPage.hero.title")}</h1>
+          <p className="idf-hero__lead">{t("featuresPage.hero.lead")}</p>
+          <div className="idf-hero__actions">
+            <Link to="/request" className="idf-btn idf-btn--solid">
+              {t("featuresPage.hero.ctaPrimary")}
+            </Link>
+            <Link to="/portfolio" className="idf-btn">
+              {t("featuresPage.hero.ctaSecondary")}
+            </Link>
+          </div>
         </div>
-        <div className="idf-hero__media">
-          <img src={heroImg} alt="A finished interior designed by Space Design Group" />
+
+        <div className="idf-hero__cluster" aria-hidden="true">
+          <figure className="idf-hero__card idf-hero__card--main">
+            <img src={heroImg} alt="" />
+            <figcaption>{t("featuresPage.hero.cardMain")}</figcaption>
+          </figure>
+          <figure className="idf-hero__card idf-hero__card--left">
+            <img src={stepShare} alt="" />
+            <figcaption>{t("featuresPage.hero.cardLeft")}</figcaption>
+          </figure>
+          <figure className="idf-hero__card idf-hero__card--right">
+            <img src={featExterior} alt="" />
+            <figcaption>{t("featuresPage.hero.cardRight")}</figcaption>
+          </figure>
         </div>
       </section>
 
       {/* SOCIAL PROOF */}
       <section className="idf-proof">
-        <p>For homeowners and businesses who would rather see it than guess.</p>
+        <p>{t("featuresPage.proof")}</p>
       </section>
 
       {/* HOW IT WORKS */}
       <section className="idf-steps">
         <header className="idf-section-head">
-          <span className="idf-kicker">How it works</span>
-          <h2>Share it. We design it. Done.</h2>
-          <p>Three steps from a photo of your room to a plan you can build.</p>
+          <span className="idf-kicker">{t("featuresPage.steps.kicker")}</span>
+          <h2>{t("featuresPage.steps.title")}</h2>
+          <p>{t("featuresPage.steps.sub")}</p>
         </header>
         <div className="idf-steps__grid">
-          {STEPS.map((step) => (
-            <article key={step.n} className="idf-step">
+          {steps.map((step, i) => (
+            <article key={i} className="idf-step">
               <div className="idf-step__media">
-                <img src={step.img} alt="" />
-                <span className="idf-step__n">{step.n}</span>
+                <img src={STEP_IMAGES[i]} alt="" />
+                <span className="idf-step__n">{`0${i + 1}`}</span>
               </div>
               <h3>{step.title}</h3>
               <p>{step.body}</p>
@@ -218,29 +98,33 @@ export function InteriorDesignFeatures() {
           ))}
         </div>
         <div className="idf-center">
-          <Link to="/request" className="idf-btn idf-btn--solid">Start your request</Link>
+          <Link to="/request" className="idf-btn idf-btn--solid">
+            {t("featuresPage.steps.cta")}
+          </Link>
         </div>
       </section>
 
       {/* FEATURE ROWS */}
       <section className="idf-features">
         <header className="idf-section-head">
-          <span className="idf-kicker">Every problem. One team.</span>
-          <h2>Whatever you change, see it finished first.</h2>
+          <span className="idf-kicker">{t("featuresPage.features.kicker")}</span>
+          <h2>{t("featuresPage.features.title")}</h2>
         </header>
-        {FEATURES.map((f, i) => (
+        {features.map((f, i) => (
           <article
-            key={f.tag}
+            key={i}
             className={"idf-feature" + (i % 2 === 1 ? " idf-feature--reverse" : "")}
           >
             <div className="idf-feature__media">
-              <img src={f.img} alt={f.tag} />
+              <img src={FEATURE_IMAGES[i]} alt={f.tag} />
             </div>
             <div className="idf-feature__text">
               <p className="idf-eyebrow">{f.tag}</p>
               <h3>{f.title}</h3>
               <p>{f.body}</p>
-              <Link to="/request" className="idf-link">Design mine →</Link>
+              <Link to="/request" className="idf-link">
+                {t("featuresPage.features.link")} →
+              </Link>
             </div>
           </article>
         ))}
@@ -249,19 +133,19 @@ export function InteriorDesignFeatures() {
       {/* TESTIMONIALS */}
       <section className="idf-testimonials">
         <header className="idf-section-head">
-          <span className="idf-kicker">Real people. Real rooms.</span>
-          <h2>They almost hired someone to guess.</h2>
+          <span className="idf-kicker">{t("featuresPage.testimonials.kicker")}</span>
+          <h2>{t("featuresPage.testimonials.title")}</h2>
         </header>
         <div className="idf-testimonials__grid">
-          {TESTIMONIALS.map((t) => (
-            <figure key={t.name} className="idf-tcard">
+          {testimonials.map((tst, i) => (
+            <figure key={i} className="idf-tcard">
               <Stars />
-              <blockquote>{t.quote}</blockquote>
+              <blockquote>{tst.quote}</blockquote>
               <figcaption>
-                <img src={t.img} alt="" />
+                <img src={TESTIMONIAL_IMAGES[i]} alt="" />
                 <span>
-                  <strong>{t.name}</strong>
-                  <em>{t.role}</em>
+                  <strong>{TESTIMONIAL_NAMES[i]}</strong>
+                  <em>{tst.role}</em>
                 </span>
               </figcaption>
             </figure>
@@ -269,54 +153,61 @@ export function InteriorDesignFeatures() {
         </div>
       </section>
 
-      {/* PACKAGES (was pricing) */}
+      {/* PACKAGES */}
       <section className="idf-packages">
         <header className="idf-section-head">
-          <span className="idf-kicker">Packages</span>
-          <h2>Pick your package</h2>
-          <p>Every project is quoted to your space and scope — no fixed menu, no surprises.</p>
+          <span className="idf-kicker">{t("featuresPage.packages.kicker")}</span>
+          <h2>{t("featuresPage.packages.title")}</h2>
+          <p>{t("featuresPage.packages.sub")}</p>
         </header>
         <div className="idf-packages__grid">
-          {PACKAGES.map((p) => (
-            <article
-              key={p.name}
-              className={"idf-package" + (p.highlight ? " idf-package--highlight" : "")}
-            >
-              {p.badge && <span className="idf-package__badge">{p.badge}</span>}
-              <h3>{p.name}</h3>
-              <p className="idf-package__tagline">{p.tagline}</p>
-              <p className="idf-package__price">Custom quote</p>
-              <ul>
-                {p.features.map((feat) => (
-                  <li key={feat}>{feat}</li>
-                ))}
-              </ul>
-              <Link
-                to="/request"
-                className={"idf-btn " + (p.highlight ? "idf-btn--solid" : "")}
+          {packages.map((p, i) => {
+            const highlight = i === 1;
+            return (
+              <article
+                key={i}
+                className={"idf-package" + (highlight ? " idf-package--highlight" : "")}
               >
-                {p.cta}
-              </Link>
-            </article>
-          ))}
+                {highlight && (
+                  <span className="idf-package__badge">{t("featuresPage.packages.badge")}</span>
+                )}
+                <h3>{p.name}</h3>
+                <p className="idf-package__tagline">{p.tagline}</p>
+                <p className="idf-package__price">{t("featuresPage.packages.price")}</p>
+                <ul>
+                  {p.features.map((feat, j) => (
+                    <li key={j}>{feat}</li>
+                  ))}
+                </ul>
+                <Link
+                  to="/request"
+                  className={"idf-btn " + (highlight ? "idf-btn--solid" : "")}
+                >
+                  {t("featuresPage.packages.cta")}
+                </Link>
+              </article>
+            );
+          })}
         </div>
       </section>
 
       {/* FAQ */}
       <section className="idf-faq">
         <header className="idf-section-head">
-          <h2>Frequently asked questions</h2>
+          <h2>{t("featuresPage.faq.title")}</h2>
         </header>
         <div className="idf-faq__list">
-          {FAQS.map((item) => (
-            <details key={item.q} className="idf-faq__item">
+          {faqs.map((item, i) => (
+            <details key={i} className="idf-faq__item">
               <summary>{item.q}</summary>
               <p>{item.a}</p>
             </details>
           ))}
         </div>
         <div className="idf-center">
-          <Link to="/contact" className="idf-btn idf-btn--solid">Talk to us</Link>
+          <Link to="/contact" className="idf-btn idf-btn--solid">
+            {t("featuresPage.faq.cta")}
+          </Link>
         </div>
       </section>
     </main>

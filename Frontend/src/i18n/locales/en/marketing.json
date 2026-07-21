@@ -313,5 +313,158 @@
     "previous": "Previous",
     "next": "Next",
     "trustedBy": "Trusted by leading organizations"
+  },
+  "featuresPage": {
+    "hero": {
+      "eyebrow": "Interior & exterior design",
+      "title": "Your space, redesigned — before you spend a franc.",
+      "lead": "Renovating is expensive to get wrong. Space Design Group shows you exactly how your room will look and what it will cost — before a single piece of furniture moves.",
+      "ctaPrimary": "Request a design",
+      "ctaSecondary": "See our work",
+      "cardMain": "Interior",
+      "cardLeft": "Living room",
+      "cardRight": "Exterior"
+    },
+    "proof": "For homeowners and businesses who would rather see it than guess.",
+    "steps": {
+      "kicker": "How it works",
+      "title": "Share it. We design it. Done.",
+      "sub": "Three steps from a photo of your room to a plan you can build.",
+      "cta": "Start your request",
+      "items": [
+        {
+          "title": "Share your space",
+          "body": "Upload photos of the room and tell us your budget, your style, and how you actually use the space. It takes a few minutes."
+        },
+        {
+          "title": "Get an AI-assisted plan",
+          "body": "Our platform and designers turn your space into a costed, visual plan — layout, materials, and furniture, all in one place."
+        },
+        {
+          "title": "Approve, and we deliver",
+          "body": "Approve the direction and we manage the project through to install, coordinating your contractor so nothing gets lost."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Every problem. One team.",
+      "title": "Whatever you change, see it finished first.",
+      "link": "Design mine",
+      "items": [
+        {
+          "tag": "Interior design",
+          "title": "The room you want — before you commit a franc",
+          "body": "Renovating is expensive to get wrong. Test layouts, palettes, and furniture on your actual room and see the finished result before any work begins."
+        },
+        {
+          "tag": "Exterior & outdoor",
+          "title": "Your exterior, reimagined",
+          "body": "Facades, gardens, and outdoor living spaces designed and visualised first — so you invest in the version you already know you love."
+        },
+        {
+          "tag": "Furniture & styling",
+          "title": "Swap what isn't working",
+          "body": "That sofa you regret? Gone. Replace a single piece — a rug, a fixture, a table — and see how the whole room changes around it."
+        },
+        {
+          "tag": "Materials & finishes",
+          "title": "Test finishes before you buy",
+          "body": "Floors, tiles, and surfaces are the most expensive mistakes in any home. Preview every finish in your space so you only buy once."
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Real people. Real rooms.",
+      "title": "They almost hired someone to guess.",
+      "items": [
+        {
+          "quote": "I showed the plan to my contractor and he built it exactly like that. No revisions, no surprises, no arguments about what I meant.",
+          "role": "Homeowner, Kigali"
+        },
+        {
+          "quote": "We were about to hire a designer for a fortune. Space Design Group gave us the whole layout costed up front — we knew what we were paying for.",
+          "role": "Apartment renovation"
+        },
+        {
+          "quote": "Seeing the room finished before we spent anything is what sold us. We changed the palette twice on screen instead of in real life.",
+          "role": "Single room refresh"
+        },
+        {
+          "quote": "They fit out our office end to end — layout, lighting, furniture. One team, one plan, and it actually came in on schedule.",
+          "role": "Commercial fit-out"
+        }
+      ]
+    },
+    "packages": {
+      "kicker": "Packages",
+      "title": "Pick your package",
+      "sub": "Every project is quoted to your space and scope — no fixed menu, no surprises.",
+      "price": "Custom quote",
+      "cta": "Request this",
+      "badge": "Most popular",
+      "items": [
+        {
+          "name": "Single Room Refresh",
+          "tagline": "One room, resolved in weeks.",
+          "features": [
+            "Focused redesign of one room",
+            "Layout, palette & furniture plan",
+            "Visual concept before you buy",
+            "Sourcing list you can act on"
+          ]
+        },
+        {
+          "name": "Full Home Design",
+          "tagline": "Every room, one accountable team.",
+          "features": [
+            "End-to-end design, all rooms",
+            "Space planning & materials",
+            "Furniture & styling managed",
+            "Project managed to install",
+            "One team, first sketch to final"
+          ]
+        },
+        {
+          "name": "Commercial Fit-Out",
+          "tagline": "Workplaces and hospitality spaces.",
+          "features": [
+            "Layout, lighting & materials",
+            "Furniture procurement",
+            "Contractor coordination",
+            "Built for offices, studios, retail"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "cta": "Talk to us",
+      "items": [
+        {
+          "q": "What does Space Design Group actually do?",
+          "a": "We design interiors and exteriors and manage the project through to install. You share your space, we return a costed visual plan, and — if you approve — we deliver it."
+        },
+        {
+          "q": "How does the process work?",
+          "a": "Submit your space with photos and preferences, receive an AI-assisted design assessment, then approve the plan. From there we coordinate the work to completion."
+        },
+        {
+          "q": "What styles do you cover?",
+          "a": "From warm minimalism to classic and contemporary — the plan is built around your taste, your space, and your budget, not a fixed template."
+        },
+        {
+          "q": "Can you redesign just one room?",
+          "a": "Yes. A Single Room Refresh focuses on one space — a living room, bedroom, or office — without the scope of a full-home project."
+        },
+        {
+          "q": "Do you work with businesses?",
+          "a": "Yes. Our Commercial Fit-Out covers offices, studios, hospitality, and retail — layout, lighting, materials, and furniture procurement, coordinated with your contractor."
+        },
+        {
+          "q": "What happens to my photos?",
+          "a": "Your photos are used only to prepare your design and assessment. They are tied to your account and are not sold or shared for anything else."
+        }
+      ]
+    }
   }
 }

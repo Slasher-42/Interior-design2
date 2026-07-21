@@ -313,5 +313,158 @@
     "previous": "Precedente",
     "next": "Successivo",
     "trustedBy": "Scelti da aziende leader"
+  },
+  "featuresPage": {
+    "hero": {
+      "eyebrow": "Design d'interni ed esterni",
+      "title": "Il tuo spazio, ridisegnato — prima di spendere un franco.",
+      "lead": "Sbagliare una ristrutturazione è costoso. Space Design Group ti mostra esattamente come apparirà la tua stanza e quanto costerà — prima di spostare un solo mobile.",
+      "ctaPrimary": "Richiedi un progetto",
+      "ctaSecondary": "Guarda i nostri lavori",
+      "cardMain": "Interni",
+      "cardLeft": "Soggiorno",
+      "cardRight": "Esterni"
+    },
+    "proof": "Per privati e aziende che preferiscono vedere piuttosto che indovinare.",
+    "steps": {
+      "kicker": "Come funziona",
+      "title": "Condividi. Progettiamo. Fatto.",
+      "sub": "Tre passi, da una foto della tua stanza a un progetto realizzabile.",
+      "cta": "Avvia la richiesta",
+      "items": [
+        {
+          "title": "Condividi il tuo spazio",
+          "body": "Carica le foto della stanza e indicaci budget, stile e come usi lo spazio. Bastano pochi minuti."
+        },
+        {
+          "title": "Ricevi un progetto assistito dall'IA",
+          "body": "La nostra piattaforma e i nostri designer trasformano il tuo spazio in un progetto visivo e preventivato — layout, materiali e arredi, tutto in un posto."
+        },
+        {
+          "title": "Approva e realizziamo",
+          "body": "Approva la direzione e gestiamo il progetto fino all'installazione, coordinando il tuo impresario così nulla va perso."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Ogni problema. Un solo team.",
+      "title": "Qualunque cosa cambi, vedila finita prima.",
+      "link": "Progetta il mio",
+      "items": [
+        {
+          "tag": "Design d'interni",
+          "title": "La stanza che vuoi — prima di impegnare un franco",
+          "body": "Sbagliare una ristrutturazione è costoso. Prova layout, palette e arredi sulla tua stanza reale e vedi il risultato finito prima che inizino i lavori."
+        },
+        {
+          "tag": "Esterni & giardino",
+          "title": "Il tuo esterno, reinventato",
+          "body": "Facciate, giardini e spazi esterni progettati e visualizzati prima — così investi nella versione che già ami."
+        },
+        {
+          "tag": "Arredi & styling",
+          "title": "Sostituisci ciò che non funziona",
+          "body": "Quel divano di cui ti penti? Sparito. Sostituisci un solo elemento — un tappeto, una lampada, un tavolo — e vedi cambiare tutta la stanza."
+        },
+        {
+          "tag": "Materiali & finiture",
+          "title": "Prova le finiture prima di comprare",
+          "body": "Pavimenti, piastrelle e superfici sono gli errori più costosi in una casa. Vedi in anteprima ogni finitura nel tuo spazio così compri una volta sola."
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Persone vere. Stanze vere.",
+      "title": "Hanno quasi assunto qualcuno per indovinare.",
+      "items": [
+        {
+          "quote": "Ho mostrato il progetto al mio impresario e l'ha costruito esattamente così. Nessuna revisione, nessuna sorpresa, nessuna discussione su cosa intendessi.",
+          "role": "Proprietario, Kigali"
+        },
+        {
+          "quote": "Stavamo per assumere un designer per una fortuna. Space Design Group ci ha dato tutto il layout preventivato in anticipo — sapevamo cosa pagavamo.",
+          "role": "Ristrutturazione appartamento"
+        },
+        {
+          "quote": "Vedere la stanza finita prima di spendere qualcosa ci ha convinti. Abbiamo cambiato la palette due volte sullo schermo invece che nella realtà.",
+          "role": "Rinnovo di una stanza"
+        },
+        {
+          "quote": "Hanno allestito il nostro ufficio dall'inizio alla fine — layout, illuminazione, arredi. Un team, un progetto, e consegnato nei tempi.",
+          "role": "Allestimento commerciale"
+        }
+      ]
+    },
+    "packages": {
+      "kicker": "Pacchetti",
+      "title": "Scegli il tuo pacchetto",
+      "sub": "Ogni progetto è preventivato in base allo spazio e alla portata — nessun menu fisso, nessuna sorpresa.",
+      "price": "Preventivo su misura",
+      "cta": "Richiedi questo",
+      "badge": "Il più scelto",
+      "items": [
+        {
+          "name": "Rinnovo di una stanza",
+          "tagline": "Una stanza, risolta in settimane.",
+          "features": [
+            "Riprogettazione mirata di una stanza",
+            "Piano di layout, palette e arredi",
+            "Concept visivo prima dell'acquisto",
+            "Lista acquisti pronta all'uso"
+          ]
+        },
+        {
+          "name": "Design casa completa",
+          "tagline": "Ogni stanza, un team responsabile.",
+          "features": [
+            "Design completo, tutte le stanze",
+            "Layout e materiali",
+            "Arredi e styling gestiti",
+            "Progetto gestito fino all'installazione",
+            "Un team, dallo schizzo alla finitura"
+          ]
+        },
+        {
+          "name": "Allestimento commerciale",
+          "tagline": "Spazi di lavoro e accoglienza.",
+          "features": [
+            "Layout, illuminazione e materiali",
+            "Fornitura arredi",
+            "Coordinamento dell'impresa",
+            "Per uffici, studi, negozi"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "cta": "Parliamone",
+      "items": [
+        {
+          "q": "Cosa fa esattamente Space Design Group?",
+          "a": "Progettiamo interni ed esterni e gestiamo il progetto fino all'installazione. Condividi il tuo spazio, restituiamo un progetto visivo preventivato e — se approvi — lo realizziamo."
+        },
+        {
+          "q": "Come funziona il processo?",
+          "a": "Invia il tuo spazio con foto e preferenze, ricevi una valutazione di design assistita dall'IA, poi approva il progetto. Da lì coordiniamo i lavori fino al completamento."
+        },
+        {
+          "q": "Quali stili proponete?",
+          "a": "Dal minimalismo caldo al classico e al contemporaneo — il progetto è costruito attorno ai tuoi gusti, al tuo spazio e al tuo budget, non a un modello fisso."
+        },
+        {
+          "q": "Potete ridisegnare una sola stanza?",
+          "a": "Sì. Il Rinnovo di una stanza si concentra su un solo spazio — soggiorno, camera o ufficio — senza la portata di un progetto completo."
+        },
+        {
+          "q": "Lavorate con le aziende?",
+          "a": "Sì. Il nostro Allestimento commerciale copre uffici, studi, ospitalità e negozi — layout, illuminazione, materiali e fornitura arredi, coordinati con la tua impresa."
+        },
+        {
+          "q": "Cosa succede alle mie foto?",
+          "a": "Le tue foto sono usate solo per preparare il tuo progetto e la valutazione. Sono legate al tuo account e non vengono vendute né condivise per altri scopi."
+        }
+      ]
+    }
   }
 }

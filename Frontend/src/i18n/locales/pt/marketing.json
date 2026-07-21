@@ -313,5 +313,158 @@
     "previous": "Anterior",
     "next": "Seguinte",
     "trustedBy": "A confiança de organizações líderes"
+  },
+  "featuresPage": {
+    "hero": {
+      "eyebrow": "Design de interiores e exteriores",
+      "title": "O seu espaço, redesenhado — antes de gastar um franco.",
+      "lead": "Errar numa renovação é caro. A Space Design Group mostra-lhe exatamente como o seu quarto vai ficar e quanto vai custar — antes de mover um único móvel.",
+      "ctaPrimary": "Solicitar um design",
+      "ctaSecondary": "Ver o nosso trabalho",
+      "cardMain": "Interior",
+      "cardLeft": "Sala",
+      "cardRight": "Exterior"
+    },
+    "proof": "Para proprietários e empresas que preferem ver a adivinhar.",
+    "steps": {
+      "kicker": "Como funciona",
+      "title": "Partilhe. Nós desenhamos. Pronto.",
+      "sub": "Três passos, de uma foto do seu quarto a um plano que pode construir.",
+      "cta": "Iniciar o meu pedido",
+      "items": [
+        {
+          "title": "Partilhe o seu espaço",
+          "body": "Carregue fotos do quarto e diga-nos o seu orçamento, o seu estilo e como usa o espaço. Demora poucos minutos."
+        },
+        {
+          "title": "Receba um plano assistido por IA",
+          "body": "A nossa plataforma e os nossos designers transformam o seu espaço num plano visual e orçamentado — disposição, materiais e mobiliário, tudo num só lugar."
+        },
+        {
+          "title": "Aprove e nós executamos",
+          "body": "Aprove a direção e gerimos o projeto até à instalação, coordenando o seu empreiteiro para que nada se perca."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Cada problema. Uma equipa.",
+      "title": "O que quer que mude, veja-o terminado primeiro.",
+      "link": "Desenhar o meu",
+      "items": [
+        {
+          "tag": "Design de interiores",
+          "title": "O quarto que quer — antes de investir um franco",
+          "body": "Errar numa renovação é caro. Teste disposições, paletas e mobiliário no seu quarto real e veja o resultado final antes de qualquer obra começar."
+        },
+        {
+          "tag": "Exterior e jardim",
+          "title": "O seu exterior, reimaginado",
+          "body": "Fachadas, jardins e espaços exteriores desenhados e visualizados primeiro — para investir na versão que já adora."
+        },
+        {
+          "tag": "Mobiliário e decoração",
+          "title": "Troque o que não funciona",
+          "body": "Aquele sofá de que se arrepende? Fora. Troque uma única peça — um tapete, um candeeiro, uma mesa — e veja todo o quarto mudar à volta."
+        },
+        {
+          "tag": "Materiais e acabamentos",
+          "title": "Teste os acabamentos antes de comprar",
+          "body": "Pisos, azulejos e superfícies são os erros mais caros de uma casa. Pré-visualize cada acabamento no seu espaço para comprar apenas uma vez."
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Pessoas reais. Quartos reais.",
+      "title": "Quase contrataram alguém para adivinhar.",
+      "items": [
+        {
+          "quote": "Mostrei o plano ao meu empreiteiro e ele construiu exatamente assim. Sem revisões, sem surpresas, sem discussões sobre o que eu queria dizer.",
+          "role": "Proprietário, Kigali"
+        },
+        {
+          "quote": "Estávamos prestes a contratar um designer por uma fortuna. A Space Design Group deu-nos toda a disposição orçamentada à partida — sabíamos o que pagávamos.",
+          "role": "Renovação de apartamento"
+        },
+        {
+          "quote": "Ver o quarto terminado antes de gastar o que quer que fosse convenceu-nos. Mudámos a paleta duas vezes no ecrã em vez de na vida real.",
+          "role": "Renovação de um quarto"
+        },
+        {
+          "quote": "Equiparam o nosso escritório de ponta a ponta — disposição, iluminação, mobiliário. Uma equipa, um plano, e entregue a tempo.",
+          "role": "Projeto comercial"
+        }
+      ]
+    },
+    "packages": {
+      "kicker": "Pacotes",
+      "title": "Escolha o seu pacote",
+      "sub": "Cada projeto é orçamentado conforme o seu espaço e âmbito — sem menu fixo, sem surpresas.",
+      "price": "Orçamento à medida",
+      "cta": "Solicitar isto",
+      "badge": "Mais escolhido",
+      "items": [
+        {
+          "name": "Renovação de um quarto",
+          "tagline": "Um quarto, resolvido em semanas.",
+          "features": [
+            "Redesenho focado de um quarto",
+            "Plano de disposição, paleta e mobiliário",
+            "Conceito visual antes de comprar",
+            "Lista de compras pronta a usar"
+          ]
+        },
+        {
+          "name": "Design de casa completa",
+          "tagline": "Cada quarto, uma equipa responsável.",
+          "features": [
+            "Design integral, todos os quartos",
+            "Disposição e materiais",
+            "Mobiliário e decoração geridos",
+            "Projeto gerido até à instalação",
+            "Uma equipa, do esboço ao acabamento"
+          ]
+        },
+        {
+          "name": "Projeto comercial",
+          "tagline": "Espaços de trabalho e hospitalidade.",
+          "features": [
+            "Disposição, iluminação e materiais",
+            "Aquisição de mobiliário",
+            "Coordenação do empreiteiro",
+            "Para escritórios, estúdios, comércio"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "cta": "Fale connosco",
+      "items": [
+        {
+          "q": "O que faz exatamente a Space Design Group?",
+          "a": "Desenhamos interiores e exteriores e gerimos o projeto até à instalação. Partilha o seu espaço, devolvemos um plano visual orçamentado e — se aprovar — executamo-lo."
+        },
+        {
+          "q": "Como funciona o processo?",
+          "a": "Envie o seu espaço com fotos e preferências, receba uma avaliação de design assistida por IA e depois aprove o plano. A partir daí coordenamos a obra até à conclusão."
+        },
+        {
+          "q": "Que estilos oferecem?",
+          "a": "Do minimalismo acolhedor ao clássico e ao contemporâneo — o plano é construído em torno do seu gosto, do seu espaço e do seu orçamento, não de um modelo fixo."
+        },
+        {
+          "q": "Podem redesenhar apenas um quarto?",
+          "a": "Sim. A Renovação de um quarto foca-se num único espaço — sala, quarto ou escritório — sem o âmbito de um projeto completo."
+        },
+        {
+          "q": "Trabalham com empresas?",
+          "a": "Sim. O nosso Projeto comercial cobre escritórios, estúdios, hotelaria e comércio — disposição, iluminação, materiais e aquisição de mobiliário, coordenados com o seu empreiteiro."
+        },
+        {
+          "q": "O que acontece às minhas fotos?",
+          "a": "As suas fotos são usadas apenas para preparar o seu design e avaliação. Estão associadas à sua conta e não são vendidas nem partilhadas para outros fins."
+        }
+      ]
+    }
   }
 }

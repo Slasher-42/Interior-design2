@@ -313,5 +313,158 @@
     "previous": "Précédent",
     "next": "Suivant",
     "trustedBy": "Ils nous font confiance"
+  },
+  "featuresPage": {
+    "hero": {
+      "eyebrow": "Design intérieur & extérieur",
+      "title": "Votre espace, redessiné — avant de dépenser un franc.",
+      "lead": "Se tromper en rénovation coûte cher. Space Design Group vous montre exactement à quoi ressemblera votre pièce et ce qu'elle coûtera — avant de déplacer le moindre meuble.",
+      "ctaPrimary": "Demander un design",
+      "ctaSecondary": "Voir nos réalisations",
+      "cardMain": "Intérieur",
+      "cardLeft": "Salon",
+      "cardRight": "Extérieur"
+    },
+    "proof": "Pour les particuliers et les entreprises qui préfèrent voir plutôt que deviner.",
+    "steps": {
+      "kicker": "Comment ça marche",
+      "title": "Partagez. On conçoit. C'est fait.",
+      "sub": "Trois étapes, d'une photo de votre pièce à un plan réalisable.",
+      "cta": "Démarrer ma demande",
+      "items": [
+        {
+          "title": "Partagez votre espace",
+          "body": "Téléchargez des photos de la pièce et indiquez-nous votre budget, votre style et votre usage de l'espace. Cela prend quelques minutes."
+        },
+        {
+          "title": "Recevez un plan assisté par IA",
+          "body": "Notre plateforme et nos designers transforment votre espace en un plan visuel et chiffré — agencement, matériaux et mobilier, au même endroit."
+        },
+        {
+          "title": "Validez, et nous réalisons",
+          "body": "Validez la direction et nous gérons le projet jusqu'à l'installation, en coordonnant votre entrepreneur pour que rien ne se perde."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Chaque problème. Une équipe.",
+      "title": "Quoi que vous changiez, voyez-le fini d'abord.",
+      "link": "Concevoir le mien",
+      "items": [
+        {
+          "tag": "Design intérieur",
+          "title": "La pièce que vous voulez — avant d'engager un franc",
+          "body": "Se tromper en rénovation coûte cher. Testez agencements, palettes et meubles sur votre pièce réelle et voyez le résultat fini avant tout travaux."
+        },
+        {
+          "tag": "Extérieur & jardin",
+          "title": "Votre extérieur, réinventé",
+          "body": "Façades, jardins et espaces de vie extérieurs conçus et visualisés d'abord — pour investir dans la version que vous aimez déjà."
+        },
+        {
+          "tag": "Mobilier & décoration",
+          "title": "Remplacez ce qui ne va pas",
+          "body": "Ce canapé que vous regrettez ? Disparu. Remplacez un seul élément — un tapis, un luminaire, une table — et voyez toute la pièce changer autour."
+        },
+        {
+          "tag": "Matériaux & finitions",
+          "title": "Testez les finitions avant d'acheter",
+          "body": "Sols, carrelages et surfaces sont les erreurs les plus coûteuses d'une maison. Prévisualisez chaque finition dans votre espace pour n'acheter qu'une fois."
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "De vraies personnes. De vraies pièces.",
+      "title": "Ils ont failli engager quelqu'un pour deviner.",
+      "items": [
+        {
+          "quote": "J'ai montré le plan à mon entrepreneur et il l'a construit exactement comme ça. Aucune révision, aucune surprise, aucune discussion sur ce que je voulais dire.",
+          "role": "Propriétaire, Kigali"
+        },
+        {
+          "quote": "Nous allions engager un designer pour une fortune. Space Design Group nous a donné tout l'agencement chiffré d'avance — nous savions ce que nous payions.",
+          "role": "Rénovation d'appartement"
+        },
+        {
+          "quote": "Voir la pièce finie avant de dépenser quoi que ce soit nous a convaincus. Nous avons changé la palette deux fois à l'écran plutôt qu'en vrai.",
+          "role": "Rafraîchissement d'une pièce"
+        },
+        {
+          "quote": "Ils ont aménagé notre bureau de A à Z — agencement, éclairage, mobilier. Une équipe, un plan, et livré dans les temps.",
+          "role": "Aménagement commercial"
+        }
+      ]
+    },
+    "packages": {
+      "kicker": "Formules",
+      "title": "Choisissez votre formule",
+      "sub": "Chaque projet est chiffré selon votre espace et sa portée — pas de menu figé, pas de surprises.",
+      "price": "Devis sur mesure",
+      "cta": "Demander ceci",
+      "badge": "Le plus choisi",
+      "items": [
+        {
+          "name": "Rafraîchissement d'une pièce",
+          "tagline": "Une pièce, réglée en quelques semaines.",
+          "features": [
+            "Refonte ciblée d'une pièce",
+            "Plan d'agencement, palette & mobilier",
+            "Concept visuel avant l'achat",
+            "Liste d'achats prête à l'emploi"
+          ]
+        },
+        {
+          "name": "Design maison complète",
+          "tagline": "Chaque pièce, une équipe responsable.",
+          "features": [
+            "Design de bout en bout, toutes les pièces",
+            "Agencement & matériaux",
+            "Mobilier & décoration gérés",
+            "Projet géré jusqu'à l'installation",
+            "Une équipe, du croquis à la finition"
+          ]
+        },
+        {
+          "name": "Aménagement commercial",
+          "tagline": "Espaces de travail et d'accueil.",
+          "features": [
+            "Agencement, éclairage & matériaux",
+            "Approvisionnement mobilier",
+            "Coordination de l'entrepreneur",
+            "Pour bureaux, studios, commerces"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "cta": "Parlons-en",
+      "items": [
+        {
+          "q": "Que fait Space Design Group exactement ?",
+          "a": "Nous concevons intérieurs et extérieurs et gérons le projet jusqu'à l'installation. Vous partagez votre espace, nous renvoyons un plan visuel chiffré, et — si vous validez — nous le réalisons."
+        },
+        {
+          "q": "Comment se déroule le processus ?",
+          "a": "Soumettez votre espace avec des photos et vos préférences, recevez une évaluation de design assistée par IA, puis validez le plan. Ensuite, nous coordonnons les travaux jusqu'à l'achèvement."
+        },
+        {
+          "q": "Quels styles proposez-vous ?",
+          "a": "Du minimalisme chaleureux au classique et au contemporain — le plan est bâti autour de vos goûts, de votre espace et de votre budget, pas d'un modèle figé."
+        },
+        {
+          "q": "Pouvez-vous redesigner une seule pièce ?",
+          "a": "Oui. Le Rafraîchissement d'une pièce se concentre sur un seul espace — salon, chambre ou bureau — sans l'ampleur d'un projet complet."
+        },
+        {
+          "q": "Travaillez-vous avec les entreprises ?",
+          "a": "Oui. Notre Aménagement commercial couvre bureaux, studios, hôtellerie et commerces — agencement, éclairage, matériaux et approvisionnement mobilier, coordonnés avec votre entrepreneur."
+        },
+        {
+          "q": "Que deviennent mes photos ?",
+          "a": "Vos photos servent uniquement à préparer votre design et votre évaluation. Elles sont liées à votre compte et ne sont ni vendues ni partagées à d'autres fins."
+        }
+      ]
+    }
   }
 }
