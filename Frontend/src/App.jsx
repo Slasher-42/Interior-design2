@@ -2,6 +2,7 @@ import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
+import { InteriorDesignFeatures } from "./pages/InteriorDesignFeatures";
 import { Portfolio } from "./pages/Portfolio";
 import { ProjectDetail } from "./pages/ProjectDetail";
 import { Services } from "./pages/Services";
@@ -70,6 +71,7 @@ function App() {
             {/* Public marketing site */}
             <Route path="/" element={<PublicLayout />}>
               <Route index                  element={<Home />} />
+              <Route path="features/interior-design" element={<InteriorDesignFeatures />} />
               <Route path="portfolio"       element={<Portfolio />} />
               <Route path="portfolio/:slug" element={<ProjectDetail />} />
               <Route path="services"        element={<Services />} />
