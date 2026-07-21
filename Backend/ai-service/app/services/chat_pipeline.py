@@ -1,7 +1,11 @@
+import logging
+
 from app.config import settings
 from app.prompts.chat_prompt import CHAT_SYSTEM_PROMPT
 from app.schemas.chat import ChatRequest, ChatResponse
 from app.services.groq_client import get_client
+
+logger = logging.getLogger(__name__)
 
 
 class ChatError(Exception):
@@ -25,7 +29,12 @@ def chat(request: ChatRequest) -> ChatResponse:
             max_tokens=400,
         )
     except Exception as exc:
-        raise ChatError(f"ai-service could not produce a chat reply: {exc}") from exc
+        # Log the full provider error (may be a large HTML page) server-side only;
+        # surface a short, clean message to the user instead of dumping raw HTML.
+        logger.exception("Groq chat completion failed")
+        raise ChatError(
+            "The assistant is temporarily unavailable. Please try again in a moment."
+        ) from exc
 
     reply = response.choices[0].message.content
     if not reply or not reply.strip():
