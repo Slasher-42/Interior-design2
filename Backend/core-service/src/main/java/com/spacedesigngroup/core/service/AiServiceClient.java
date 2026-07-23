@@ -35,6 +35,12 @@ import java.util.Map;
 @Service
 public class AiServiceClient {
 
+    // Cold-start recovery: Render spins the ai-service down when idle, and its
+    // gateway returns 502/503 for the first requests while the app boots (~45s).
+    // Retry those with backoff so a cold start recovers silently instead of
+    // surfacing an error. Backoff sums to ~37s, within the 120s read timeout.
+    private static final long[] RETRY_BACKOFF_MS = {2_000, 5_000, 10_000, 20_000};
+
     private final RestClient restClient;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -51,11 +57,11 @@ public class AiServiceClient {
 
     public AiAssessResultPayload assess(AiAssessRequestPayload payload) {
         try {
-            AiAssessResultPayload result = restClient.post()
+            AiAssessResultPayload result = executeWithRetry(() -> restClient.post()
                     .uri("/assess")
                     .body(payload)
                     .retrieve()
-                    .body(AiAssessResultPayload.class);
+                    .body(AiAssessResultPayload.class));
             if (result == null) {
                 throw new AiAssessmentFailedException("ai-service returned an empty response");
             }
@@ -108,12 +114,12 @@ public class AiServiceClient {
         }).contentType(MediaType.IMAGE_PNG);
 
         try {
-            AiStageResultPayload result = restClient.post()
+            AiStageResultPayload result = executeWithRetry(() -> restClient.post()
                     .uri("/stage/generate-upload")
                     .contentType(MediaType.MULTIPART_FORM_DATA)
                     .body(builder.build())
                     .retrieve()
-                    .body(AiStageResultPayload.class);
+                    .body(AiStageResultPayload.class));
             if (result == null) {
                 throw new AiAssessmentFailedException("ai-service returned an empty response");
             }
@@ -125,11 +131,11 @@ public class AiServiceClient {
 
     private <T> T post(String uri, Object body, Class<T> responseType, String failureMessage) {
         try {
-            T result = restClient.post()
+            T result = executeWithRetry(() -> restClient.post()
                     .uri(uri)
                     .body(body)
                     .retrieve()
-                    .body(responseType);
+                    .body(responseType));
             if (result == null) {
                 throw new AiAssessmentFailedException("ai-service returned an empty response");
             }
@@ -137,6 +143,42 @@ public class AiServiceClient {
         } catch (RestClientException ex) {
             throw new AiAssessmentFailedException(detailOrFallback(ex, "ai-service " + failureMessage), ex);
         }
+    }
+
+    /**
+     * Runs an ai-service call, retrying transient gateway failures (502/503/504)
+     * and connection errors with backoff. These are almost always Render cold
+     * starts; a fresh boot is usually ready within a couple of attempts.
+     */
+    private <T> T executeWithRetry(java.util.function.Supplier<T> call) {
+        RestClientException lastError = null;
+        for (int attempt = 0; attempt <= RETRY_BACKOFF_MS.length; attempt++) {
+            try {
+                return call.get();
+            } catch (RestClientException ex) {
+                lastError = ex;
+                if (attempt == RETRY_BACKOFF_MS.length || !isRetryable(ex)) {
+                    throw ex;
+                }
+                try {
+                    Thread.sleep(RETRY_BACKOFF_MS[attempt]);
+                } catch (InterruptedException ie) {
+                    Thread.currentThread().interrupt();
+                    throw ex;
+                }
+            }
+        }
+        throw lastError; // unreachable: loop either returns or throws
+    }
+
+    private boolean isRetryable(RestClientException ex) {
+        if (ex instanceof RestClientResponseException responseEx) {
+            int status = responseEx.getStatusCode().value();
+            return status == 502 || status == 503 || status == 504;
+        }
+        // No HTTP response at all (connection refused/reset/timeout) — typical
+        // while the ai-service is still booting. Worth retrying.
+        return true;
     }
 
     private String detailOrFallback(RestClientException ex, String fallback) {
@@ -150,7 +192,8 @@ public class AiServiceClient {
                         return fallback + ": " + detail;
                     }
                 } catch (Exception ignored) {
-                    return fallback + ": " + body;
+                    // Non-JSON body (e.g. an HTML 502 gateway page). Don't leak
+                    // the raw page into the error — return the clean fallback.
                 }
             }
         }
