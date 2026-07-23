@@ -54,6 +54,9 @@ public class SecurityConfig {
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/api/public/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/site-background-video").permitAll()
+                // Allow HEAD so uptime pingers (e.g. UptimeRobot free plan, which
+                // can only send HEAD) get 200 instead of 401 on this public endpoint.
+                .requestMatchers(HttpMethod.HEAD, "/api/site-background-video").permitAll()
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .anyRequest().authenticated()
             )
