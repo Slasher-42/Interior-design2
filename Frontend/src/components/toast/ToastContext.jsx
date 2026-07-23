@@ -20,17 +20,12 @@ export function ToastProvider({ children }) {
     }
   }, []);
 
-  const showToast = useCallback((message, options = {}) => {
-    const { type = "success", duration = DEFAULT_DURATION } = options;
-    const id = ++idCounter;
-    setToasts((current) => [...current, { id, message, type, duration }]);
-
-    if (duration > 0) {
-      const timer = setTimeout(() => dismissToast(id), duration);
-      timers.current.set(id, timer);
-    }
-    return id;
-  }, [dismissToast]);
+  const showToast = useCallback((_message, _options = {}) => {
+    // Toast popups are disabled app-wide. This is intentionally a no-op so that
+    // existing showToast/showSuccess/showError callers keep working but nothing
+    // is ever displayed. To re-enable, restore the implementation from git history.
+    return ++idCounter;
+  }, []);
 
   const showSuccess = useCallback(
     (message, options) => showToast(message, { ...options, type: "success" }),
